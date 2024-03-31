@@ -13,8 +13,8 @@
             "iteration": 1,
             "speed": 6,
             "active_mouse_event": false,
-            "text_align": "center",
-            "richtext": "<p>FREE SHIPPING OVER $100. <a href='\/collections\/all'>SHOP NOW<\/a><\/p>",
+            "text_align": "end",
+            "richtext": "<p>FREE SHIPPING OVER $100. <a href=\"\/collections\/all\">SHOP NOW<\/a><\/p>",
             "countdown_end_time": "May 28, 2024 00:00:00",
             "text_color": "#ffffff",
             "link_text_color": "#ffffff"
@@ -26,7 +26,7 @@
       ],
       "settings": {
         "full_width": true,
-        "style": "style-1",
+        "style": "style-2",
         "background_color": "#000000"
       }
     },
