@@ -4,8 +4,8 @@
     "theme_name": "Gelico",
     "theme_version": "1.0.0",
     "theme_author": "ArticMaze",
-    "theme_documentation_url": "https://articmaze.com",
-    "theme_support_url": "https://articmaze.com/"
+    "theme_documentation_url": "https:\/\/articmaze.com",
+    "theme_support_url": "https:\/\/articmaze.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
