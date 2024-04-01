@@ -1,0 +1,283 @@
+<style>
+  #shopify-section-{{ section.id}} {
+    background: #f7f6f6;
+  }
+  .hs1-top-wrapper {
+    display: grid;
+    grid-template-columns: 1fr {{ section.settings.logo_width_desktop | append: 'px' }} 1fr;
+    align-items: center;
+  }
+  .hs1-icons-section {
+    justify-self: flex-end;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .hs1-icons-section a{
+    text-decoration: none;
+  }
+  .hs1-icons-section a svg{
+    width: 28px;
+  }
+  .hs1-logo-section {
+    text-decoration: none;
+  }
+  .hs1-logo-section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .hs1-shop-name{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+
+
+  {% comment %} manu style --------------------------------  {% endcomment %}
+  .hs1-first-layer-ul,
+  .hs1-second-layer-ul,
+  .hs1-third-layer-ul {
+    list-style: none;
+  }
+  .hs1-first-layer-ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 58px;
+  }
+
+  .hs1-second-layer-ul,
+  .hs1-third-layer-ul {
+    list-style: none;
+    background: #f7f6f6;
+  }
+  .hs1-first-layer-ul li {}
+  .hs1-first-layer-ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .hs1-dropdown-wrapper li{
+    position: relative;
+  }
+  .hs1-second-layer-wrapper{
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 300px;
+      height: 100%;
+      display: none;
+      padding: 0;
+      margin: 0;
+  }
+  .hs1-second-layer-ul,
+  .hs1-third-layer-ul {
+    padding: 13px 0px 14px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .hs1-second-layer-li,
+  .hs1-third-layer-li {
+    position: relative;
+    padding: 0 30px;
+  }
+  .hs1-third-layer-wrapper{
+      position: absolute;
+      left: calc(100%);
+      top: 0;
+      width: 300px;
+      height: 100%;
+      display: none;
+      padding: 0;
+      margin: 0;
+  }
+  .hs1-dropdown-li{
+    position: relative;
+  }
+  .hs1-dropdown-li:hover .hs1-second-layer-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-width: max-content;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0 0px 0px;
+  }
+  .hs1-second-layer-li:hover .hs1-third-layer-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-width: max-content;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 0 0px 4px;
+  }
+  .hs1-menu-icon-wrapper {
+    display: flex;
+  }
+  .hs1-menu-icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .hs1-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .hs1-plus-icon,
+  .hs1-minus-icon {
+    position: absolute;
+    transform-origin: center;
+    transition: .1s;
+    width: 9px;
+    height: 9px;
+  }
+  .hs1-minus-icon {
+    visibility: hidden;
+  }
+  .hs1-first-layer-li:hover .hs1-plus-icon {
+    visibility: hidden;
+  }
+  .hs1-first-layer-li:hover .hs1-minus-icon {
+    visibility: visible;
+  }
+
+  @media(max-width: 1150px) {
+    .hs1-first-layer-ul {
+        gap: 30px;
+      }
+      .hs1-first-layer-ul li {}
+      .hs1-first-layer-ul li a {
+        font-size: 13px;
+      }
+  }
+</style>
+
+{% liquid
+  assign enable_megamenu = section.settings.enable_megamenu | strip | strip_html | remove: ' ' | downcase
+%}
+
+<div class="header-style-1-container">
+  <div class="page-width">
+    <div class="header-style-1-wrapper">
+      <div class="hs1-top-wrapper">
+        <div class="hs1-localization-section">
+          <div class="hs1-localization-wrapper">
+            <p>Eng +</p>
+          </div>
+        </div>
+        <a href="/" class="hs1-logo-section">
+          {% liquid
+            assign logo_desktop = section.settings.logo_desktop
+            assign logo_mobile = section.settings.logo_mobile
+            if logo_mobile == blank
+              assign logo_mobile = logo_desktop
+            endif
+          %}
+          {% unless logo_desktop == blank %}
+            <picture>
+              <source media="(min-width:650px)" srcset="{{ logo_desktop | image_url: width: logo_desktop.width }}">
+              {{ logo_mobile | image_url: width: logo_mobile.width | image_tag: loading: 'lazy' }}
+            </picture>
+          {% else %}
+            <h2 class="hs1-shop-name">{{ section.settings.shop_name }}</h2>
+          {% endunless %}
+        </a>
+        <div class="hs1-icons-section">
+          {% unless section.settings.search_icon == blank %}
+            <a href="/search">
+              {{ section.settings.search_icon }}
+            </a>
+          {% else %}
+            <a href="/search">
+              {% render 'gelico-icons', name: 'search' %}
+            </a>
+          {% endunless %}
+          {% unless section.settings.usre_icon == blank %}
+            <a href="/account">
+              {{ section.settings.usre_icon }}
+            </a>
+          {% else %}
+            <a href="/account">
+              {% render 'gelico-icons', name: 'user' %}
+            </a>
+          {% endunless %}
+          {% unless section.settings.cart_icon == blank %}
+            <a href="/cart">
+              {{ section.settings.cart_icon }}
+            </a>
+          {% else %}
+            <a href="/cart">
+              {% render 'gelico-icons', name: 'cart' %}
+            </a>
+          {% endunless %}
+        </div>
+      </div>
+      <div class="hs1-menu-wrapper">
+        <ul class="hs1-first-layer-ul">
+          {% for link in section.settings.main_menu.links %}
+            {% liquid
+              assign filrstLabeTitle = link.title | remove: ' ' | downcase
+              assign isMegaEnable = false
+              if enable_megamenu contains filrstLabeTitle
+                assign isMegaEnable = true
+              endif
+            %}
+            <li class="hs1-first-layer-li {% if isMegaEnable %}hs1-megamenu-li{% else %}hs1-dropdown-li{% endif %}">
+              <div class="hs1-menu-icon-wrapper">
+                <a href="{{ link.url }}" class="hs1-first-layer-a">{{ link.title }}</a>
+                {% unless link.links == blank %}
+                  <div class="hs1-icon-wrapper">
+                    {% render 'gelico-icons', name: 'plus', class: 'hs1-plus-icon' %}
+                    {% render 'gelico-icons', name: 'minus', class: 'hs1-minus-icon' %}
+                  </div>
+                {% endunless %}
+              </div>
+              {% unless link.links == blank %}
+                {% if isMegaEnable %}
+                  <div class="hs1-megamenu-wrapper"></div>
+                {% else %}
+                  <div class="hs1-second-layer-wrapper">
+                    <ul class="hs1-second-layer-ul">
+                      {% for childLink in link.links %}
+                        <li class="hs1-second-layer-li">
+                          <a class="hs1-second-layer-a" href="{{ childLink.url }}">{{ childLink.title }}</a>
+                          {% unless childLink.links == blank %}
+                            <div class="hs1-third-layer-wrapper">
+                              <ul class="hs1-third-layer-ul">
+                                {% for grandChildLink in childLink.links %}
+                                  <li class="hs1-third-layer-li">
+                                    <a class="hs1-third-layer-a" href="{{ grandChildLink.url }}">
+                                      {{- grandChildLink.title -}}
+                                    </a>
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% endunless %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+              {% endunless %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

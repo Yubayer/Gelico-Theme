@@ -1,0 +1,117 @@
+{% case section.settings.header_style %}
+  {% when 'style-1' %}
+    {% render 'header-style-1', section: section %}
+  {% when 'style-2' %}
+    {% render 'header-style-2', section: section %}
+  {% when 'style-3' %}
+    {% render 'header-style-3', section: section %}
+{% endcase %}
+
+{% schema %}
+{
+  "name": "Galiko Header",
+  "settings": [
+    {
+      "type": "select",
+      "id": "header_style",
+      "label": "Header Style",
+      "options": [
+        {
+          "value": "style-1",
+          "label": "Style 1"
+        },
+        {
+          "value": "style-2",
+          "label": "Style 2"
+        },
+        {
+          "value": "style-3",
+          "label": "Style 3"
+        }
+      ],
+      "default": "style-1"
+    },
+    {
+      "type": "link_list",
+      "id": "main_menu",
+      "label": "Select Main Menu"
+    },
+    {
+      "type": "textarea",
+      "id": "enable_megamenu",
+      "label": "Enable Megamenu",
+      "default": "Spring Shop, Designers, New Arrivals",
+      "info": "Spring Shop, Designers, New Arrivals"
+    },
+    {
+      "type": "header",
+      "content": "Header Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_desktop",
+      "label": "Logo Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_mobile",
+      "label": "Logo Mobile"
+    },
+    {
+      "type": "text",
+      "id": "shop_name",
+      "label": "Shop Name",
+      "info": "Shop Name",
+      "default": "GALIKO"
+    },
+    {
+      "type": "range",
+      "id": "logo_width_desktop",
+      "label": "Logo Width Desktop",
+      "default": 100,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_width_mobile",
+      "label": "Logo Width Mobile",
+      "default": 100,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Header Icons"
+    },
+    {
+      "type": "html",
+      "id": "search_icon",
+      "label": "Search Icon",
+      "info": "Copy Paste Search Icon SVG HTML Code"
+    },
+    {
+      "type": "html",
+      "id": "usre_icon",
+      "label": "User Icon",
+      "info": "Copy Paste User Icon SVG HTML Code"
+    },
+    {
+      "type": "html",
+      "id": "cart_icon",
+      "label": "Cart Icon",
+      "info": "Copy Paste Cart Icon SVG HTML Code"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Galiko Header"
+    }
+  ]
+}
+{% endschema %}
