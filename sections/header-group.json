@@ -4,17 +4,38 @@
   "sections": {
     "announcement_bar_1_teLbF4": {
       "type": "announcement-bar-1",
+      "blocks": {
+        "announcement_kYjLbA": {
+          "type": "announcement",
+          "settings": {
+            "active_sliding": false,
+            "direction": "left",
+            "iteration": 1,
+            "speed": 6,
+            "active_mouse_event": false,
+            "text_align": "center",
+            "richtext": "<p>FREE SHIPPING OVER $100. <a href='\/collections\/all'>SHOP NOW<\/a><\/p>",
+            "countdown_end_time": "May 28, 2024 00:00:00",
+            "text_color": "#fff",
+            "link_text_color": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_kYjLbA"
+      ],
       "settings": {
-
+        "full_width": true,
+        "style": "style-1",
+        "background_color": "#000"
       }
     },
-
     "galiko_header_r8QUGJ": {
       "type": "galiko-header",
       "settings": {
         "header_style": "style-1",
         "main_menu": "main-menu",
-        "enable_megamenu": "Spring Shop, Designers, New Arrivals",
+        "enable_megamenu": "",
         "shop_name": "GALIKO",
         "logo_width_desktop": 100,
         "logo_width_mobile": 100,
