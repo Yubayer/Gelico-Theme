@@ -1,12 +1,21 @@
-{% case section.settings.header_style %}
-  {% when 'style-1' %}
-    {% render 'header-style-1', section: section %}
-  {% when 'style-2' %}
-    {% render 'header-style-2', section: section %}
-  {% when 'style-3' %}
-    {% render 'header-style-3', section: section %}
-{% endcase %}
+<style>
+  @media (max-width: 1200px) {
+    .hs1-desktop-header {
+      display: none;
+    }
+  }
+</style>
 
+<div class="hs1-desktop-header">
+  {% case section.settings.header_style %}
+    {% when 'style-1' %}
+      {% render 'header-style-1', section: section %}
+    {% when 'style-2' %}
+      {% render 'header-style-2', section: section %}
+    {% when 'style-3' %}
+      {% render 'header-style-3', section: section %}
+  {% endcase %}
+</div>
 {% schema %}
 {
   "name": "Galiko Header",
@@ -107,7 +116,49 @@
       "info": "Copy Paste Cart Icon SVG HTML Code"
     }
   ],
-  "blocks": [],
+  "blocks": [
+    {
+      "type": "megamenu-image",
+      "name": "Megamenu Image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_title",
+          "label": "Menu Title",
+          "default": "Spring Shop",
+          "info": "Spring Shop, Designers, New Arrivals"
+        },
+        {
+          "type": "header",
+          "content": "First image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "First Image"
+        },
+        {
+          "type": "url",
+          "id": "url1",
+          "label": "First Image URL"
+        },
+        {
+          "type": "header",
+          "content": "Second image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Second Image"
+        },
+        {
+          "type": "url",
+          "id": "url2",
+          "label": "Second Image URL"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Galiko Header"
