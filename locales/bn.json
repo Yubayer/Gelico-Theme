@@ -1004,6 +1004,148 @@
     "settings": {
       "title": "সেটিংস",
       "loading_accessibility_message": "সেটিংস পৃষ্ঠা লোড হচ্ছে"
+    },
+    "orders": {
+      "order_list": {
+        "filter": {
+          "date": {
+            "custom": "কাস্টম"
+          }
+        },
+        "table_view": "টেবিল ভিউ দেখান",
+        "show_order_actions_accessibility_label": "অর্ডার {{name}} এর জন্য অর্ডার ক্রিয়া দেখান"
+      },
+      "order_status": {
+        "attempted_delivery_label": "ডেলিভারির চেষ্টা করা হয়েছে",
+        "attempted_delivery_description": "বিতরণ প্রচেষ্টা ব্যর্থ হয়েছে.",
+        "attempted_to_deliver_label": "পৌঁছে দেওয়ার চেষ্টা করা হয়েছে",
+        "confirmed_description": "আমরা আপনার অর্ডার পেয়েছি।",
+        "on_its_way_description": "এই চালান তার পথে আছে.",
+        "out_for_delivery_description": "এই চালান ডেলিভারির জন্য আউট.",
+        "preparing_for_shipping_label": "শিপিং জন্য প্রস্তুতি",
+        "preparing_for_shipping_description": "এই আইটেম শিপিং জন্য প্রস্তুত করা হচ্ছে.",
+        "ready_for_pickup_label": "উঠানোর জন্য প্রস্তুত",
+        "ready_for_pickup_description": "এই আইটেমগুলি পিক আপ জন্য প্রস্তুত. আপনার অর্ডার নেওয়ার সময় অনুগ্রহ করে আপনার অর্ডার নিশ্চিতকরণ আনুন।",
+        "ready_for_pickup_location": "আপনার অর্ডার লোকেশনে পিকআপের জন্য প্রস্তুত",
+        "picked_up_label": "পিক আপ",
+        "picked_up_description": "এসব আইটেম তোলা হয়েছে।",
+        "canceled_description": "আপনার অর্ডার বাতিল করা হয়েছে {{date}} তারিখে।",
+        "canceled_label": "বাতিল",
+        "canceled_title": "আপনার অর্ডার বাতিল করা হয়েছে",
+        "come_back": "আপনার চালানের অবস্থার আপডেটের জন্য এই পৃষ্ঠায় ফিরে আসুন।",
+        "company_tracking_number": "{{company}} ট্র্যাকিং নম্বর:",
+        "confirmed_label": "নিশ্চিত করা হয়েছে",
+        "confirmed_title": "আপনার অর্ডার নিশ্চিত করা হয়েছে",
+        "confirmed_description_pickup": "আপনার অর্ডার পিকআপের জন্য প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "confirmed_description_digital": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "confirmed_description_gift_card_text": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি টেক্সট পাবেন।",
+        "delivered_description": "এই চালান বিতরণ করা হয়েছে.",
+        "delivered_label": "বিতরণ করা হয়েছে",
+        "delivered_title": "আপনার চালান বিতরণ করা হয়েছে",
+        "delivered_description_digital": "আপনার অর্ডার সম্পূর্ণ.",
+        "delivered_description_gift_card": {
+          "one": "উপহার কার্ড ইমেল দ্বারা পাঠানো হয়েছে.",
+          "other": "উপহার কার্ড ইমেল দ্বারা পাঠানো হয়েছে."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "টেক্সট দ্বারা উপহার কার্ড পাঠানো হয়েছে.",
+          "other": "টেক্সট দ্বারা উপহার কার্ড পাঠানো হয়েছে."
+        },
+        "gift_card_label": {
+          "one": "উপহার কার্ড",
+          "other": "উপহার কার্ড"
+        },
+        "gift_card_resend": {
+          "one": "ইমেল পুনরায় পাঠান",
+          "other": "ইমেল পুনরায় পাঠান"
+        },
+        "gift_card_resend_text": {
+          "one": "টেক্সট আবার পাঠান",
+          "other": "টেক্সট আবার পাঠান"
+        },
+        "gift_resend_success": {
+          "one": "উপহার কার্ড আবার পাঠানো হয়েছে",
+          "other": "উপহার কার্ড পুনরায় পাঠানো হয়েছে"
+        },
+        "gift_resend_failure": {
+          "one": "আপনার উপহার কার্ড পুনরায় পাঠাতে একটি সমস্যা হয়েছে৷ আবার চেষ্টা করুন বা আমাদের সাথে যোগাযোগ করুন.",
+          "other": "আপনার উপহার কার্ড পুনরায় পাঠাতে একটি সমস্যা হয়েছে৷ আবার চেষ্টা করুন বা আমাদের সাথে যোগাযোগ করুন."
+        },
+        "gift_card_resend_description": {
+          "one": "এটি প্রাপ্ত না হলে, ইমেল পুনরায় পাঠান বা",
+          "other": "যদি তারা প্রাপ্ত না হয়, ইমেল পুনরায় পাঠান বা"
+        },
+        "gift_card_resend_description_text": {
+          "one": "এটি প্রাপ্ত না হলে, টেক্সট আবার পাঠান বা",
+          "other": "যদি তারা প্রাপ্ত না হয়, টেক্সট পুনরায় পাঠান বা"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "উপহার কার্ড একটি পৃথক ইমেল পাঠানো হবে.",
+          "other": "প্রতিটি উপহার কার্ড একটি পৃথক ইমেল পাঠানো হবে."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "উপহার কার্ডটি একটি পৃথক পাঠ্যে পাঠানো হবে।",
+          "other": "প্রতিটি উপহার কার্ড একটি পৃথক পাঠ্য পাঠানো হবে."
+        },
+        "estimated_delivery": "সম্ভাব্য প্রসব {{date}}",
+        "in_review_description": "আমাদের আরও তথ্যের প্রয়োজন হলে বা আপনার অর্ডার নিশ্চিত হলে আমরা আপনাকে জানাব।",
+        "in_review_label": "পর্যালোচনা",
+        "in_review_title": "আপনার অর্ডার পর্যালোচনা করা হচ্ছে",
+        "last_updated": "সর্বশেষ আপডেট করা হয়েছে {{date}}",
+        "multiple_shipments_label": "একাধিক চালান",
+        "no_tracking_number": "এই চালানের জন্য কোন ট্র্যাকিং নম্বর নেই.",
+        "on_its_way_label": "তার পথে",
+        "on_its_way_title": "আপনার চালান পথে আছে",
+        "out_for_delivery_label": "ডেলিভারির জন্য আউট",
+        "out_for_delivery_title": "আপনার চালান ডেলিভারির জন্য আউট",
+        "resume_tracking": "ট্র্যাকিং পুনরায় শুরু করুন",
+        "submitted_label": "জমা দেওয়া হয়েছে",
+        "submitted_description": "অর্ডার এবং পেমেন্টের বিবরণ পর্যালোচনা করুন।",
+        "there_was_a_problem_label": "একটা সমস্যা ছিল",
+        "track_shipment": "ট্রাকে পরিবহন করা",
+        "request_return": "রিটার্নের অনুরোধ করুন",
+        "view_order_for_details": "বিস্তারিত জানার জন্য অর্ডার দেখুন",
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "প্রাইম অর্ডার দিয়ে কিনুন ট্র্যাক এবং পরিচালনা করুন",
+            "new_window_disclaimer": "(একটি নতুন উইন্ডো খোলে)"
+          }
+        }
+      },
+      "status_mark_as_delivered": "বিতরণ করা হিসাবে চিহ্নিত করুন",
+      "status_title": "অর্ডারের অবস্থা",
+      "buy_again": "আবার কিনুন",
+      "buy_again_accessibility_label": "অর্ডারের জন্য আবার কিনুন {{orderId}}",
+      "manage": "পরিচালনা করুন",
+      "manage_accessiblity_label": "অর্ডার পরিচালনা করুন {{orderId}}",
+      "group_title_label": "এর অংশ: {{groupTitle}}",
+      "havent_received_your_delivery": "আপনার ডেলিভারি পাননি?",
+      "didnt_pick_up_order": "আপনার অর্ডার নিতে না?",
+      "if_you_didnt_receive_this": "আপনি যদি এটি না পান,",
+      "if_not_received": {
+        "one": "যদি না পাওয়া যেত,",
+        "other": "যদি তারা গ্রহণ না করা হয়,"
+      },
+      "let_us_know": "আমাদের জানতে দাও",
+      "contact_us": "যোগাযোগ করুন."
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "বিস্তারিত দেখাও",
+        "expand_events_accessibility_label": "অর্ডার চালান বিবরণ দেখান",
+        "hide_events_label": "আড়াল বিস্তারিত",
+        "hide_events_accessibility_label": "অর্ডার চালান বিবরণ লুকান"
+      },
+      "addresses_section_title": "বিলিং এবং শিপিং",
+      "order_details": "আদেশ বিবরণী",
+      "order_details_skeleton_accessibility_label": "সমস্ত অর্ডার বিবরণ দেখতে লগ ইন করুন.",
+      "billing_address": "বিলিং ঠিকানা",
+      "card_ending_with": "{{lastDigits}} দিয়ে শেষ",
+      "contact": "যোগাযোগ",
+      "contact_information": "যোগাযোগের তথ্য",
+      "company": "প্রতিষ্ঠান",
+      "fully_refunded_label": "ফেরত দেওয়া হয়েছে",
+      "group_title_label": "এর অংশ: {{groupTitle}}"
     }
   }
 }
