@@ -233,7 +233,13 @@
         "pincode_label": "পিনকোড",
         "pincode_placeholder": "পিনকোড",
         "civic_number_warning": "আপনার কাছে থাকলে একটি বাড়ির নম্বর যোগ করুন",
-        "optional_last_name_label": "পদবি (ঐচ্ছিক)"
+        "optional_last_name_label": "পদবি (ঐচ্ছিক)",
+        "optional_recipient_label": "মনোযোগ (ঐচ্ছিক)",
+        "different_shipping_address_label": "অন্য ঠিকানায় পাঠান",
+        "different_shipping_address_text": "এই অর্ডারের জন্য একটি এককালীন ঠিকানা ব্যবহার করুন",
+        "change_company_location_link_label": "কোম্পানির অবস্থান পরিবর্তন করুন",
+        "change_location_link_label": "অবস্থান পরিবর্তন করুন",
+        "ship_to_company": "{{companyName}} এ পাঠান"
       },
       "order_summary": {
         "due_on_fulfillment": "পূর্ণতার উপর বকেয়া",
@@ -265,7 +271,22 @@
             "other": "%{count}টি আইটেম"
           }
         },
-        "alternative_payment_currency_total": "%{amount_due} হিসাবে চার্জ করা হয়েছে"
+        "alternative_payment_currency_total": "%{amount_due} হিসাবে চার্জ করা হয়েছে",
+        "title": "অর্ডার সারাংশ",
+        "group_title_label": "\"%{group_title}\" এর অংশ",
+        "order_name_label": "অর্ডার %{name}",
+        "shopping_cart_label": "বাজারের ব্যাগ",
+        "discount_title": "ছাড়",
+        "discount_title_stacking": {
+          "one": "ছাড়",
+          "other": "ছাড়"
+        },
+        "discount_order_stacking": {
+          "one": "ছাড়",
+          "other": "অর্ডার ডিসকাউন্ট"
+        },
+        "discount_label": "মূল্যহ্রাসের কোড",
+        "discount_not_found": "প্রবেশ করা কোডের সাথে মেলে একটি বৈধ ডিসকাউন্ট খুঁজে পাওয়া যায়নি৷"
       },
       "shipping": {
         "title": "ডেলিভারি",
@@ -734,6 +755,129 @@
         "physical_gift_card_invalid_code": "শারীরিক উপহার কার্ড কোড অবৈধ.",
         "email_blank": "একটি ইমেল লিখুন",
         "phone_blank": "একটি ফোন নম্বর লিখুন"
+      },
+      "delivery_options": {
+        "free_total_label": "বিনামূল্যে",
+        "ship": "জাহাজ",
+        "ship_to_address": "জাহাজের ঠিকানা",
+        "shipping_address": "প্রেরণের ঠিকানা",
+        "pick_up": "পিক আপ",
+        "pick_up_from_store": "দোকান থেকে পিক আপ",
+        "pick_up_locations": "পিক আপ অবস্থান",
+        "pick_up_in_one_hour": "সাধারণত 1 ঘন্টার মধ্যে প্রস্তুত",
+        "pick_up_in_two_hours": "সাধারণত 2 ঘন্টার মধ্যে প্রস্তুত",
+        "pick_up_in_four_hours": "সাধারণত 4 ঘন্টার মধ্যে প্রস্তুত",
+        "pick_up_in_twenty_four_hours": "সাধারণত 24 ঘন্টার মধ্যে প্রস্তুত",
+        "pick_up_in_two_to_four_days": "সাধারণত 2-4 দিনের মধ্যে প্রস্তুত",
+        "pick_up_in_five_or_more_days": "সাধারণত 5+ দিনের মধ্যে প্রস্তুত",
+        "pick_up_in_zero_to_two_hours": "2 ঘন্টার মধ্যে পিকআপের জন্য প্রস্তুত",
+        "pick_up_in_two_to_four_hours": "4 ঘন্টার মধ্যে পিকআপের জন্য প্রস্তুত",
+        "pick_up_immediately": "এখন পিকআপের জন্য প্রস্তুত",
+        "pick_up_next_day": "পরের দিন পিকআপের জন্য প্রস্তুত",
+        "pickup_point_method_definition": "পিক আপ পয়েন্ট জাহাজ",
+        "retail_method_definition": "খুচরা শিপিং",
+        "none_method_definition": "কোন শিপিং",
+        "subscription_pickup_information": "এই বিতরণ পদ্ধতি এই অর্ডারের সমস্ত আইটেম এবং এই সদস্যতার জন্য ভবিষ্যতের সমস্ত অর্ডারগুলিতে প্রযোজ্য হবে৷"
+      },
+      "customer_account": {
+        "not_user_label": "%{first_name} না?",
+        "have_an_account_label": "একাউন্ট আছে?",
+        "sign_in_link_label": "প্রবেশ করুন",
+        "sign_out_link_label": "প্রস্থান",
+        "save_my_information_label": "পরবর্তী সময়ের জন্য এই তথ্য সংরক্ষণ করুন",
+        "invalid_address": "নির্বাচিত ঠিকানা অবৈধ। %{update_address_link} অথবা একটি ভিন্ন ঠিকানা নির্বাচন করুন।",
+        "incomplete_address": "নির্বাচিত ঠিকানা অসম্পূর্ণ. %{update_address_link} অথবা একটি ভিন্ন ঠিকানা নির্বাচন করুন।",
+        "rollup_label": "হিসাব",
+        "invalid_shipping_method_summary": "উপলব্ধ শিপিং পদ্ধতি দেখতে একটি বৈধ শিপিং ঠিকানা নির্বাচন করুন৷"
+      },
+      "stock": {
+        "page_title": "ইনভেন্টরি সমস্যা",
+        "title": "স্টক শেষ",
+        "items_unavailable_notice": "কিছু আইটেম আর উপলব্ধ নেই.",
+        "product_column_header": "পণ্য",
+        "quantity_column_header": "পরিমাণ",
+        "price_column_header": "দাম",
+        "status_column_header": "স্ট্যাটাস",
+        "removed_from_cart_notice": "কার্ট থেকে সরানো হয়েছে",
+        "sold_out_label": "বিক্রি শেষ",
+        "reduced_label": "হ্রাস করা হয়েছে",
+        "reduced_with_quantity_label": "শুধু %{quantity_available} বাকি",
+        "remove_from_cart_button_label": "কার্ট থেকে সরান",
+        "continue_shopping_button_label": "চালিয়ে যান",
+        "go_back_to_cart_button_label": "আমার কার্টে ফিরে যান",
+        "remove": "অপসারণ",
+        "return_to_store_label": "দোকানে ফিরে যান",
+        "continue_cta_label": "চেকআউট চালিয়ে যান",
+        "item_label": {
+          "one": "{{count}} টি আইটেম",
+          "other": "{{count}} টি আইটেম"
+        },
+        "empty_cart_label": "তোমার থলে তো খালি",
+        "quantity_update": {
+          "page_title": "পরিমাণ আপডেট",
+          "title": "পরিমাণ আপডেট",
+          "description": "এই আইটেমগুলির জন্য উপলব্ধ পরিমাণ পরিবর্তিত হয়েছে এবং আপনার কার্টে আপডেট করা হয়েছে৷"
+        },
+        "unpurchasable_product": {
+          "title": "ক্রয় অযোগ্য পণ্য",
+          "header": "কিছু আইটেম আপনার কার্ট থেকে সরানো হয়েছে",
+          "message": "এই আইটেম B2B অর্ডার জন্য উপলব্ধ নয়.",
+          "status_column_header": "পাওয়া যায় না"
+        },
+        "unpurchasable_product_generic": {
+          "title": "ক্রয় অযোগ্য পণ্য",
+          "header": "কিছু আইটেম আপনার কার্ট থেকে সরানো হয়েছে",
+          "message": "এই আইটেম পাওয়া যায় না.",
+          "status_column_header": "পাওয়া যায় না"
+        },
+        "unshippable_product": {
+          "title": "কোনো ডেলিভারি পাওয়া যায় না",
+          "header": {
+            "one": "%{count} আইটেমের জন্য কোনো ডেলিভারি উপলব্ধ নেই৷",
+            "other": "%{count}টি আইটেমের জন্য কোনো ডেলিভারি উপলব্ধ নেই৷"
+          },
+          "message": {
+            "one": "এই আইটেমটি আপনার কার্ট থেকে সরানো হবে কারণ আপনার ঠিকানার জন্য কোনো ডেলিভারি পদ্ধতি উপলব্ধ নেই৷",
+            "other": "এই আইটেমগুলি আপনার কার্ট থেকে সরানো হবে কারণ আপনার ঠিকানার জন্য কোনো ডেলিভারি পদ্ধতি উপলব্ধ নেই৷"
+          },
+          "status_column_header": "বিতরণ নাই"
+        },
+        "price_update": {
+          "title": "মূল্য আপডেট",
+          "description": "এই আইটেমগুলির দাম পরিবর্তিত হয়েছে এবং আপনার কার্টে আপডেট করা হয়েছে৷"
+        },
+        "out_of_stock": {
+          "description": "এই আইটেমগুলি আর উপলব্ধ নেই এবং আপনার কার্ট থেকে সরানো হয়েছে৷",
+          "items_unavailable": "কিছু আইটেম আর উপলব্ধ নেই এবং আপনার কার্ট থেকে সরানো হয়েছে৷"
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "অনুপলব্ধ পণ্য",
+          "other": "অনুপলব্ধ পণ্য"
+        },
+        "products_not_available": {
+          "one": "এই পণ্যটি আপনার কার্ট থেকে সরানো হবে কারণ এটি আপনার দেশে\/অঞ্চলে উপলব্ধ নয়৷",
+          "other": "এই পণ্যগুলি আপনার কার্ট থেকে সরানো হবে কারণ সেগুলি আপনার দেশে\/অঞ্চলে উপলব্ধ নয়৷"
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "এই পণ্যটি আপনার দেশে\/অঞ্চলে উপলব্ধ নয়।",
+          "other": "এই পণ্যগুলি আপনার দেশে\/অঞ্চলে উপলব্ধ নয়৷"
+        },
+        "unavailable_label": "অনুপলব্ধ"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "%{count} আইটেমের জন্য কোনো ডেলিভারি উপলব্ধ নেই৷",
+            "other": "%{count}টি আইটেমের জন্য কোনো ডেলিভারি উপলব্ধ নেই৷"
+          },
+          "message": {
+            "one": "এই আইটেমটি আপনার কার্ট থেকে সরানো হবে কারণ আপনার ঠিকানার জন্য কোনো ডেলিভারি পদ্ধতি উপলব্ধ নেই৷",
+            "other": "এই আইটেমগুলি আপনার কার্ট থেকে সরানো হবে কারণ আপনার ঠিকানার জন্য কোনো ডেলিভারি পদ্ধতি উপলব্ধ নেই৷"
+          },
+          "label": "বিতরণ নাই"
+        }
       }
     },
     "errors": {
