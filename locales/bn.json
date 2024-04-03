@@ -114,7 +114,120 @@
             "must_fulfill_from_constraint_not_satisfied": "পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট নয় কারণ প্রয়োজনীয় অবস্থান থেকে আইটেম পূরণ করা যাবে না।",
             "must_fulfill_from_same_location_constraint_not_satisfied": "পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট নয় কারণ আইটেম একই অবস্থান থেকে পূরণ করা যাবে না.",
             "delivery_strategy_conditions_not_satisfied": "এই অবস্থানের জন্য ডেলিভারি কৌশলগুলি উপলব্ধ, কিন্তু তাদের শর্তগুলি সন্তুষ্ট নয়৷",
-            "out_of_stock_at_origin_location": "মূল অবস্থানে কোন স্টক."
+            "out_of_stock_at_origin_location": "মূল অবস্থানে কোন স্টক.",
+            "invalid_signature": "অবৈধ ডিসকাউন্ট স্বাক্ষর।"
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B স্টোরগুলিতে ডিসকাউন্ট অনুমোদিত নয়।",
+            "custom_discount_not_honoured": "সরবরাহকৃত কাস্টম ডিসকাউন্টকে সম্মানিত করা হয়নি।",
+            "unsupported_expectation": "সরবরাহকৃত ডিসকাউন্ট লাইনে এমন একটি প্রত্যাশা রয়েছে যা নীতিটি ব্যাখ্যা করতে পারেনি৷",
+            "additional_requested_discount_code_discarded": "অনুরোধ করা অতিরিক্ত কোড ডিসকাউন্ট বাতিল করা হয়েছে.",
+            "allocations_mismatch": "প্রত্যাশিত ডিসকাউন্ট বরাদ্দ প্রকৃত ডিসকাউন্ট বরাদ্দের সাথে মেলে না।",
+            "discount_code_not_honoured": "ডিসকাউন্ট কোড প্রয়োগ করা হয়নি."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "চালিয়ে যাওয়ার জন্য বিক্রেতার প্রস্তাবে একটি নতুন ট্যাক্স লাইন অবশ্যই গ্রহণ করতে হবে।",
+            "unresolvable_tax_terms": "বর্তমান আলোচনার প্রেক্ষাপটে প্রস্তাবিত শর্তাবলী অমীমাংসিত।",
+            "delivery_price_is_abstract": "সম্পর্কিত বিতরণ মূল্য বিমূর্ত.",
+            "tax_inclusivity_mismatch": "কংক্রিট totalTaxAndDutyAmount বা totalAmountIncludedInTarget মানের সাথে পুনরায় আলোচনা করুন।",
+            "tax_exemption_not_supported": "বর্তমান আলোচনার অধিবেশনের জন্য কর ছাড় সমর্থিত নয়।",
+            "delivery_tax_exemption_not_supported": "ডেলিভারি লাইনের জন্য ট্যাক্স ছাড় বর্তমানে সমর্থিত নয়।",
+            "proposed_allocations_required": "'প্রস্তাবিত বরাদ্দ' ক্ষেত্র অনুপস্থিত।",
+            "merchandise_terms_must_be_defined": "পণ্যদ্রব্য শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "delivery_terms_must_be_defined": "ডেলিভারি শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "merchandise_discount_terms_must_be_defined": "মার্চেন্ডাইজ ডিসকাউন্ট শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "delivery_discount_terms_must_be_defined": "ডেলিভারি ডিসকাউন্ট শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "allocated_required": "অনুপস্থিত 'বরাদ্দ' ক্ষেত্র।",
+            "value_required": "অনুপস্থিত 'মান' ক্ষেত্র।",
+            "line_splits_not_supported": "'মার্চেন্ডাইজ লাইন' ক্ষেত্রটি অবশ্যই বিভক্ত করা উচিত যাতে বিক্রেতার প্রস্তাবে প্রতিটির একটি একক লাইন উপাদান থাকে৷"
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B দোকানে ম্যানুয়াল পেমেন্ট অনুমোদিত নয়।",
+            "positive_amount_expected": "অর্থপ্রদানের পরিমাণ অবশ্যই 0-এর বেশি হতে হবে।",
+            "total_amount_mismatch": "অর্থপ্রদানের মোট পরিমাণ অর্থপ্রদানের পরিমাণের সাথে মেলে না।",
+            "subscription_terms_not_accepted": "সদস্যতা শর্তাবলী গ্রহণ করা হয় না.",
+            "missing_session_id": "ক্রেডিট কার্ড সেশন তথ্য অনুপস্থিত.",
+            "gateway_not_supported": "পেমেন্ট গেটওয়ে অর্থপ্রদানের পদ্ধতি সংরক্ষণ করা সমর্থন করে না।",
+            "credit_card_last_name_required": "'শেষ নাম' শূন্য হতে পারে না।",
+            "credit_card_update_failed": "ক্রেডিট কার্ড আপডেট ব্যর্থ হয়েছে.",
+            "installments_amount_invalid": "কিস্তি লেনদেনের জন্য অবৈধ পরিমাণ।",
+            "installments_test_mode_not_allowed": "পরীক্ষার মোড অনুমোদিত নয়।",
+            "installments_gift_card_not_allowed": "কিস্তি উপহার কার্ড ব্যবহার করার অনুমতি দেয় না.",
+            "installments_unsupported_currency": "কিস্তি এই মুদ্রা সমর্থন করে না.",
+            "installments_unsupported_shipping": "কিস্তি এই ঠিকানায় শিপিং সমর্থন করে না.",
+            "installments_unsupported_billing": "কিস্তি এই বিলিং ঠিকানা সমর্থন করে না.",
+            "installments_unsupported_subscriptions": "কিস্তি সাবস্ক্রিপশন সমর্থন করে না।",
+            "installments_ineligible_line_item": "এই ক্রয়ের একটি লাইন আইটেমের জন্য কিস্তি নিষ্ক্রিয় করা হয়েছে।",
+            "shop_cash_not_allowed": "শপ পে ছাড়া শপ ক্যাশ অনুমোদিত নয়।",
+            "shop_cash_unsupported_checkout_source": "শপ ক্যাশ এই চেকআউট সমর্থন করে না।",
+            "shop_cash_gift_card_not_allowed": "শপ ক্যাশ উপহার কার্ড কেনার অনুমতি দেয় না।",
+            "shop_cash_not_enabled": "শপ ক্যাশ এই দোকানের জন্য সক্ষম নয়।",
+            "shop_cash_unsupported_subscriptions": "শপ ক্যাশ সাবস্ক্রিপশন সমর্থন করে না।",
+            "shop_cash_unsupported_shipping": "শপ ক্যাশ কোনো শিপিং ছাড়াই পণ্যদ্রব্য সমর্থন করে না।",
+            "invalid_address_type": "প্রদত্ত ঠিকানার ধরন এই অর্থপ্রদান পদ্ধতির জন্য অবৈধ৷",
+            "missing_retail_attributions": "ম্যানুয়ালি প্রবেশ করা ক্রেডিট কার্ডের অর্থপ্রদানের জন্য খুচরা বৈশিষ্ট্য প্রয়োজন।",
+            "unexpected_retail_attributions": "ক্রেডিট কার্ড পেমেন্টের জন্য অপ্রত্যাশিতভাবে রিটেল অ্যাট্রিবিউশন দেওয়া হয়েছে।",
+            "invalid_card_source": "এই সেশনে এই কার্ড উৎস ব্যবহার করার অনুমতি নেই।",
+            "wallet_content_missing": "ওয়ালেট সামগ্রী অনুপস্থিত৷",
+            "payment_instrument_not_found": "পেমেন্ট পদ্ধতি খুঁজে পাওয়া যায়নি",
+            "unauthorized_capture_method": "অর্থপ্রদান ক্যাপচার পদ্ধতি কনফিগার করা অনুমোদিত নয়৷",
+            "saved_payment_methods_not_allowed": "সংরক্ষিত অর্থপ্রদানের পদ্ধতি অনুমোদিত নয়।",
+            "saved_payment_methods_not_enabled": "এই দোকানের জন্য সংরক্ষিত অর্থপ্রদান পদ্ধতি সক্ষম করা নেই৷",
+            "saved_payment_methods_cvv_verification_disabled": "নির্বাচিত অর্থপ্রদানের পদ্ধতির জন্য CVV যাচাইকরণ প্রয়োজন যা এই দোকানের জন্য সক্ষম নয়৷ একটি ভিন্ন অর্থপ্রদানের পদ্ধতি নির্বাচন করুন।",
+            "store_credit_not_enabled": "এই দোকানের জন্য স্টোর ক্রেডিট সক্ষম করা নেই।",
+            "store_credit_account_not_found": "দোকান ক্রেডিট অ্যাকাউন্ট পাওয়া যায়নি.",
+            "store_credit_account_mismatch": "স্টোর ক্রেডিট অ্যাকাউন্ট ক্রেতা পরিচয়ের সাথে মেলে না।",
+            "store_credit_mismatched_currency": "দোকান ক্রেডিট অ্যাকাউন্টের মুদ্রা চেকআউট মুদ্রার সাথে মেলে না।",
+            "store_credit_insufficient_funds": "স্টোর ক্রেডিট অ্যাকাউন্টে পর্যাপ্ত তহবিল নেই।",
+            "store_credit_buying_gift_card": "আপনি একটি উপহার কার্ড কিনতে দোকান ক্রেডিট ব্যবহার করতে পারবেন না.",
+            "gift_cards_not_allowed_for_b2b": "B2B স্টোরগুলিতে উপহার কার্ড অনুমোদিত নয়।",
+            "method_required": "একটি অর্থপ্রদান পদ্ধতি প্রস্তাব করা আবশ্যক.",
+            "paypal_express_address_invalid": "পেপ্যাল ​​একটি অবৈধ ঠিকানা ফেরত দিয়েছে৷",
+            "shop_cash_unsupported_currency": "শপ ক্যাশ এই মুদ্রা সমর্থন করে না।",
+            "market_manager_blocks_wallet_payments": "পেমেন্ট পদ্ধতি মার্কেট ম্যানেজার দ্বারা সমর্থিত নয়।"
+          },
+          "tip": {
+            "not_accepted_by_shop": "দোকান টিপস গ্রহণ করে না.",
+            "only_one_tip_line_allowed": "একাধিক টিপ লাইন সমর্থিত নয়।",
+            "tips_not_allowed_for_b2b": "B2B দোকানে টিপস অনুমোদিত নয়।",
+            "currency_change_reset": "মুদ্রা পরিবর্তনের কারণে টিপ রিসেট করা হয়েছে।",
+            "tips_not_allowed_for_deferred_purchase_options": "বিলম্বিত ক্রয় বিকল্পগুলির জন্য টিপস এখনও সমর্থিত নয়।"
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "এই খসড়া অর্ডার বর্তমান দোকানে বিদ্যমান নেই।",
+            "staff_member_not_exist": "এই স্টাফ বর্তমান দোকানে বিদ্যমান নেই.",
+            "location_not_exist": "বর্তমান দোকানে এই অবস্থানটি নেই।",
+            "point_of_sale_device_not_exist": "বর্তমান দোকানে এই পয়েন্ট অফ সেল ডিভাইসটি বিদ্যমান নেই৷",
+            "unresolvable_target_merchandise_lines": "বর্তমান আলোচনার প্রেক্ষাপটে প্রস্তাবিত বিক্রয় বৈশিষ্ট্যগুলি অমীমাংসিত৷"
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "আপনার ক্রেতার প্রস্তাবে অ-আলোচনাযোগ্য_ শর্তাবলী থাকা উচিত।",
+            "invalid_signature": "{{target_terms}} এর স্বাক্ষরটি অবৈধ৷"
+          },
+          "inventory": {
+            "missing_quantity_value": "ক্রেতার ইনভেন্টরি লাইনে পরিমাণ ক্ষেত্র অনুপস্থিত।",
+            "changing_behavior_not_allowed": "এই ক্লায়েন্টের ইনভেন্টরি আচরণ পরিবর্তন করার অনুমতি নেই।",
+            "only_one_inventory_behavior_allowed": "বর্তমানে প্রতি চেকআউটে শুধুমাত্র একটি ইনভেন্টরি আচরণ অনুমোদিত।"
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "এই চেকআউটের জন্য দায়িত্ব অস্বীকার করা অনুমোদিত নয়।"
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "এই চেকআউটের জন্য খুচরা অ্যাট্রিবিউশন অনুমোদিত নয়।",
+            "retail_attribution_required": "এই চেকআউটের জন্য খুচরা অ্যাট্রিবিউশন প্রয়োজন৷"
+          },
+          "captcha": {
+            "metadata_missing": "এই চেকআউটের জন্য একটি ক্যাপচা সম্পূর্ণ করা প্রয়োজন৷",
+            "metadata_mismatch": "প্রদত্ত ক্যাপচা প্রদানকারী এবং প্রকার প্রত্যাশিত মানগুলির সাথে মেলে না৷",
+            "token_missing": "এই চেকআউটটি সম্পূর্ণ করতে একটি ক্যাপচা টোকেন প্রদান করতে হবে।",
+            "job_enqueue_failed": "ক্যাপচা যাচাইকরণ কাজটি সারিবদ্ধ হতে ব্যর্থ হয়েছে৷",
+            "job_already_queued": "এই ক্যাপচা টোকেনের জন্য ক্যাপচা যাচাইকরণ ইতিমধ্যেই সারিবদ্ধ হয়েছে৷",
+            "token_expired": "প্রদত্ত ক্যাপচা টোকেনের মেয়াদ শেষ হয়ে গেছে। চেকআউট চালিয়ে যেতে একটি নতুন ক্যাপচা সম্পূর্ণ করুন।",
+            "token_invalid": "প্রদত্ত ক্যাপচা টোকেনটি অবৈধ ছিল৷ চেকআউট চালিয়ে যেতে একটি নতুন ক্যাপচা সম্পূর্ণ করুন।",
+            "token_not_valid_for_session": "প্রদত্ত ক্যাপচা এই চেকআউটের সাথে ব্যবহার করা যাবে না।"
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "প্রাপ্ত পরিমাণ দোকান মুদ্রা হতে হবে."
           }
         },
         "back_button_label": "প্রত্যাবর্তন",
@@ -176,7 +289,16 @@
             "one": "{{number}} মার্কারের ক্লাস্টার",
             "other": "{{number}} টি চিহ্নিতকারীর ক্লাস্টার"
           }
-        }
+        },
+        "full_price": "পূর্ণ মূল্য:",
+        "title": "চেকআউট - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - চেকআউট৷",
+        "loading_title": "চেকআউট - {{shopName}}",
+        "google_map_title": "গুগল মানচিত্র",
+        "submit_order_button_label": "অর্ডার জমা",
+        "submit_for_review_button_label": "পর্যালোচনার জন্য জমা",
+        "submit_for_review_notice_label": "আপনার অর্ডার পর্যালোচনা না হওয়া পর্যন্ত পেমেন্ট বকেয়া হবে না",
+        "continue_to_payment_plans_button_label": "অর্থপ্রদানের পরিকল্পনা চালিয়ে যান"
       },
       "contact": {
         "title": "তথ্য",
