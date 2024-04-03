@@ -1020,6 +1020,172 @@
           "privacy_policy": "গোপনীয়তা নীতি",
           "terms_of_service": "সেবা পাবার শর্ত"
         }
+      },
+      "no_address_location": {
+        "alt_header": "শিপিং ঠিকানা অনুপস্থিত",
+        "message": "চেকআউট সম্পূর্ণ করতে এই অবস্থানের জন্য একটি ঠিকানা যোগ করতে আমাদের সাথে যোগাযোগ করুন।",
+        "email_us_button_label": "আমাদের একটি ইমেইল পাঠান"
+      },
+      "order_errors": {
+        "creation_failure": "আপনার অর্ডার তৈরিতে একটি সমস্যা হয়েছে৷ আবার চেষ্টা করুন, অথবা আরো বিস্তারিত জানার জন্য আমাদের সাথে যোগাযোগ করুন.",
+        "network_failure": "নেটওয়ার্ক ত্রুটির কারণে আপনার অর্ডার জমা দেওয়া যায়নি। আপনার সংযোগ পরীক্ষা করুন এবং আবার চেষ্টা করুন.",
+        "inventory_reservation_failure": "কিছু আইটেম আর উপলব্ধ নেই."
+      },
+      "session_errors": {
+        "session_not_unique": "আপনার অর্ডার প্রক্রিয়াকরণে একটি সমস্যা হয়েছে৷ দোকানে ফিরে যেতে এই পৃষ্ঠাটি রিফ্রেশ করুন।",
+        "session_already_finished": "এই আদেশ ইতিমধ্যে জমা দেওয়া হয়েছে. আপনি একটি নতুন অর্ডার শুরু করতে দোকানে ফিরে যেতে পারেন।"
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "বন্ধ",
+        "business_hours": "খোলার সময়",
+        "title": "সংগ্রহের স্থান",
+        "or": "বা",
+        "search_button": "অনুসন্ধান করুন",
+        "selector_tabs": "পিক-আপ পয়েন্ট নির্বাচক",
+        "selector_tab_map": "মানচিত্র",
+        "selector_tab_list": "তালিকা",
+        "could_not_resolve_address": "আপনার ঠিকানা সনাক্ত করা যায়নি. আবার চেষ্টা করুন বা অন্য ঠিকানা ব্যবহার করুন",
+        "no_pickup_points_near_you": "নির্বাচিত ঠিকানার কাছাকাছি কোনো পিকআপ পয়েন্ট পাওয়া যায়নি",
+        "no_pickup_points_near_location": "আপনার অবস্থানের কাছাকাছি কোনো পিকআপ পয়েন্ট পাওয়া যায়নি",
+        "no_pickup_points_found": "কোনো পিকআপ পয়েন্ট পাওয়া যায়নি",
+        "paginator": {
+          "next_accessibility_label": "পরবর্তী পৃষ্ঠা",
+          "previous_accessibility_label": "আগের পৃষ্ঠা",
+          "header": {
+            "one": "দেখানো হচ্ছে %{first} - %{last} of %{count} পয়েন্ট",
+            "other": "দেখানো হচ্ছে %{first} - %{last} of %{count} পয়েন্ট"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{count} পয়েন্টের %{pickup_point_index}",
+            "other": "%{count} পয়েন্টের %{pickup_point_index}"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last} %{count} পয়েন্ট",
+            "other": "%{first} - %{last} %{count} পয়েন্ট"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "আপনার অবস্থানের কাছে %{count} পিকআপ পয়েন্ট",
+          "other": "আপনার অবস্থানের কাছাকাছি %{count} পিকআপ পয়েন্ট"
+        },
+        "change": "পরিবর্তন",
+        "waiting_on_pickup_point_location_notice": "পিকআপ পয়েন্টের জন্য অনুসন্ধান করা হচ্ছে...",
+        "geolocation": {
+          "shared_location_button": "আমার অবস্থান ব্যবহার করুন",
+          "errors": {
+            "unsuported_by_browser": "ভূ-অবস্থান পাওয়া আপনার ব্রাউজার দ্বারা সমর্থিত নয়। আবার চেষ্টা করুন বা একটি ভিন্ন ব্রাউজার ব্যবহার করুন.",
+            "permission_not_allowed": "আপনার অবস্থান শেয়ার করার অনুমতি দিন।",
+            "permission_denied": "আপনার অবস্থান পাওয়া যায়নি. আবার চেষ্টা কর."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "আমাদের চেকআউটে একটি সমস্যা ছিল",
+          "message": "এই পৃষ্ঠাটি রিফ্রেশ করুন বা কয়েক মিনিটের মধ্যে আবার চেষ্টা করুন৷",
+          "action": {
+            "cta": "সতেজ পৃষ্ঠা"
+          },
+          "request_id": "অনুরোধ আইডি: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "কার্টে ফেরত যান",
+        "return_to_cart_to_update_quantities": "পরিমাণ আপডেট করতে %{return_to_cart_link_text}",
+        "subscription_changed": "আপনার সদস্যতার একটি পরিবর্তিত হয়েছে.",
+        "company_location_changed": "আপনার কার্ট আপডেট করা হয়েছে. আপনার অর্ডারটি জমা দেওয়ার আগে পর্যালোচনা করুন।",
+        "company_location_changed_product_removed": "আপনার কার্ট আপডেট করা হয়েছে কারণ কিছু পণ্য এই অবস্থানে উপলব্ধ নেই৷ আপনার অর্ডারটি জমা দেওয়ার আগে পর্যালোচনা করুন।",
+        "violations_title": "{{violation}} অনুপস্থিত বা অবৈধ",
+        "individual_violations_title": {
+          "DeliveryViolations": "প্রেরণের ঠিকানা",
+          "PaymentViolations": "বিলিং ঠিকানা",
+          "OtherViolations": "আদেশ তথ্য",
+          "UnhandledViolations": "আদেশ তথ্য"
+        },
+        "all_violations_content": "এই তথ্য আপডেট করতে এবং আপনার অর্ডার সম্পূর্ণ করতে আমাদের কল করুন বা {{emailLink}} :",
+        "all_violations_email_link": "ইমেইল",
+        "editable_shipping_address_violations_message_title": "আপনার অর্ডার সম্পূর্ণ করতে এই তথ্য যোগ করুন:",
+        "editable_shipping_address_violations_message_footer": "এই অবস্থানের ঠিকানা স্থায়ীভাবে আপডেট করতে, {{emailLink}} ।",
+        "editable_shipping_address_violations_email_link": "যোগাযোগ করুন",
+        "shipping_address_incomplete_title": "শিপিং ঠিকানা অসম্পূর্ণ",
+        "calculating_shipping": "শিপিং এখনও গণনা করা হচ্ছে. কয়েক সেকেন্ডের মধ্যে আবার চেষ্টা করুন। আপনাকে চার্জ করা হয়নি।",
+        "calculating_taxes": "ট্যাক্স এখনও গণনা করা হচ্ছে. কয়েক সেকেন্ডের মধ্যে আবার চেষ্টা করুন। আপনাকে চার্জ করা হয়নি।"
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "পুনঃমূল্যায়ন",
+          "link_label": "{{partnerDisplayName}} নিয়ম ও শর্তাবলী৷"
+        }
+      },
+      "online_store_chat": {
+        "title": "প্রশ্ন? আমাদের সাথে খোস গল্প কর"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "%{address}-এর কাছাকাছি স্টক সহ %{count} স্টোর আছে",
+          "other": "%{address}-এর কাছাকাছি স্টক সহ %{count} দোকান আছে"
+        },
+        "toggle_location": "আমার অবস্থান পরিবর্তন করুন",
+        "or": "বা",
+        "cancel": "বাতিল করুন",
+        "your_location": "তোমার অবস্থান",
+        "search_button": "দোকান খুঁজুন",
+        "no_stores_found": "কোন দোকান পাওয়া যায়নি",
+        "could_not_resolve_address": "আপনার ঠিকানা সনাক্ত করা যায়নি. আবার চেষ্টা করুন বা অন্য ঠিকানা ব্যবহার করুন",
+        "paginator": {
+          "accessibility_label": "স্থানীয় পিক-আপ পেজিনেশন",
+          "previous": "আগের পৃষ্ঠা",
+          "next": "পরবর্তী পৃষ্ঠা",
+          "label": {
+            "one": "%{first} - %{last} %{count} স্টোর",
+            "other": "%{first} - %{last} %{count} স্টোর"
+          }
+        },
+        "reveal_more_label": {
+          "one": "আরও %{count} লোকেশন দেখান",
+          "other": "আরও %{count}টি অবস্থান দেখান৷"
+        }
+      },
+      "captcha": {
+        "title": "চালিয়ে যেতে ক্যাপচা সম্পূর্ণ করুন",
+        "errors": {
+          "not_solved": "চালিয়ে যেতে ক্যাপচা সম্পূর্ণ করুন"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "আপনার ডিসকাউন্ট কোড আর উপলব্ধ না থাকার কারণে আপনার অর্ডার প্রক্রিয়া করা যায়নি। আপনার মোট অর্ডার পর্যালোচনা করুন এবং আবার চেষ্টা করুন."
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "Shop Pay লোড করতে সমস্যা হয়েছে",
+          "try_again_later": "আপনার সংযোগ পরীক্ষা করুন বা এই উইন্ডোটি বন্ধ করুন এবং কয়েক মুহূর্তের মধ্যে আবার চেষ্টা করুন৷",
+          "checkout_has_expired": "আপনার চেকআউটের মেয়াদ শেষ হয়ে গেছে। এই উইন্ডোটি বন্ধ করুন এবং {{shopName}} থেকে আবার চেক আউট করার চেষ্টা করুন।"
+        },
+        "return_to_store": "{{shopName}} এ ফিরে যান"
+      },
+      "wallets": {
+        "return_to_store": "দোকানে ফিরে যান",
+        "redirect_hint": "আপনাকে {{walletName}} দিয়ে লগইন করতে বলা হবে।",
+        "logged_in": "{{email}} এর সাথে সংযুক্ত",
+        "shipping_line_label": "পাঠানো",
+        "payment_in_progress_title": "পেমেন্ট চলছে",
+        "payment_in_progress_body": "আপনার পেমেন্ট প্রক্রিয়া করা হচ্ছে. আপনার অর্ডার শীঘ্রই সম্পন্ন হবে.",
+        "call_to_action": "{{walletName}} দিয়ে পেমেন্ট করুন",
+        "redirection_notice": "\" {{buttonLabel}} \" ক্লিক করার পর, আপনার কেনাকাটা নিরাপদে সম্পূর্ণ করতে আপনাকে {{walletName}} এ পুনঃনির্দেশিত করা হবে৷",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} উপলব্ধ নেই৷",
+            "description": "{{walletName}} উপলব্ধ ছিল না৷ একটি ভিন্ন অর্থপ্রদানের পদ্ধতি ব্যবহার করুন বা পরে আবার চেষ্টা করুন।",
+            "instructions": "{{walletName}} এর সাথে একটি সমস্যা ছিল। আবার চেষ্টা করতে স্টোরে ফিরে যান বা অন্য উপায়ে চেক আউট করুন।"
+          },
+          "generic": "{{walletName}} এর সাথে একটি সমস্যা ছিল। আবার চেষ্টা করুন বা অন্য কোনো পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+          "terminal": "{{walletName}} এর সাথে একটি সমস্যা ছিল। একটি ভিন্ন অর্থপ্রদান পদ্ধতি ব্যবহার করুন.",
+          "detour": {
+            "stock_problems": "কিছু আইটেম আর উপলব্ধ নেই. {{walletName}} বন্ধ করুন এবং আবার চেষ্টা করুন।",
+            "price_change": "কিছু জিনিসের দাম পরিবর্তন হয়েছে। আপনার অর্ডার পর্যালোচনা করতে {{walletName}} বন্ধ করুন এবং আবার চেষ্টা করুন।",
+            "queue": "আপনাকে চেকআউট করার জন্য একটি সারিতে রাখা হয়েছে। চালিয়ে যেতে {{walletName}} বন্ধ করুন।"
+          }
+        }
       }
     },
     "errors": {
@@ -1166,6 +1332,116 @@
       },
       "storefront": {
         "invalid_password": "পাসওয়ার্ড ভুল, আবার চেষ্টা করুন."
+      },
+      "tags": {
+        "add_articles": "%{tag} ট্যাগ সহ নিবন্ধগুলিতে সংকীর্ণ অনুসন্ধান",
+        "add_products": "%{tag} ট্যাগের সাথে মেলা পণ্যের সংকীর্ণ নির্বাচন",
+        "remove_articles": "%{tag} ট্যাগ করা নেই এমন নিবন্ধগুলিতে বিস্তৃত অনুসন্ধান করুন",
+        "remove_products": "ট্যাগ %{tag} সরান"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "আমাদের মেইলিং তালিকা সদস্যতা জন্য আপনাকে ধন্যবাদ.",
+        "disclaimer": "আপনি যে কোনো সময় ত্যাগ করতে পারেন।",
+        "unsubscribe": "সদস্যতা ত্যাগ করুন"
+      },
+      "unsubscribed": {
+        "confirmation": "আপনি আমাদের মেইলিং তালিকা থেকে সদস্যতা ত্যাগ করেছেন।",
+        "disclaimer": "আপনি আমাদের থেকে আর কোন মার্কেটিং আপডেট পাবেন না। আপনি যে কোনো সময় আবার সদস্যতা নিতে পারেন.",
+        "preview": "গ্রাহকরা সদস্যতা ত্যাগ করলে তারা কী দেখতে পাবে তা আপনি প্রিভিউ করছেন।"
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>আপনি ইমেল খোলা ট্র্যাকিং নির্বাচন করেছেন.<\/b>",
+          "visibility": "ইমেল খোলা হার বেনামে রিপোর্ট করা হবে. আপনি একটি সমষ্টিগত ইমেল খোলার হারের অংশ হিসাবে একটি ইমেল খুলেছেন কিনা তা আমরা কেবল দেখব৷",
+          "opt_out_html": "আপনি যদি এই তথ্য শেয়ার করতে না চান তাহলে আপনি ইমেল খোলা ট্র্যাকিং <a style=\"text-decoration:underline;\" href=\"%{link}\">অপ্ট আউট<\/a> করতে পারেন৷",
+          "preview_bar": "গ্রাহকরা যখন ইমেল ওপেন ট্র্যাকিং বেছে নেবে তখন তারা কী দেখতে পাবে তা আপনি প্রিভিউ করছেন।"
+        },
+        "opt_out": {
+          "opted_out_html": "<b>আপনি ইমেল খোলা ট্র্যাকিং অপ্ট আউট করেছেন৷<\/b>",
+          "visibility": "আপনি আমাদের ইমেলগুলি খুলেছেন কিনা তা আমরা দেখব না।",
+          "opt_in_html": "ইমেল খোলা ট্র্যাকিং <a style=\"text-decoration:underline;\" href=\"%{link}\">নির্বাচন করুন<\/a> .",
+          "preview_bar": "গ্রাহকরা ইমেল ওপেন ট্র্যাকিং থেকে অপ্ট আউট করলে তারা কী দেখতে পাবে তা আপনি প্রিভিউ করছেন৷"
+        },
+        "no_longer_track": {
+          "status_html": "<b>আমরা আর কোনো ইমেল খোলার ট্র্যাক করি না।<\/b>",
+          "privacy_policy": "এই ইমেল পাঠানোর পরে, আমরা আমাদের গোপনীয়তা নীতি আপডেট করেছি এবং আমরা আর খোলার ট্র্যাক করি না।"
+        },
+        "track": {
+          "status_html": "<b>ইমেল খোলা ট্র্যাকিং রিপোর্ট করা হয়.<\/b>",
+          "visibility": "মোট ইমেল খোলার হারের অংশ হিসাবে আপনি ইমেলটি খুলেছেন কিনা তা আমরা কেবল দেখব।"
+        },
+        "updated_policy": {
+          "status_html": "<b>ইমেল খোলা ট্র্যাকিং রিপোর্ট করা হয়.<\/b>",
+          "visibility": "আমরা আমাদের নীতি আপডেট করেছি, এবং এখন ট্র্যাক ইমেল খোলা হয়। ইমেল খোলা হার বেনামে রিপোর্ট করা হবে. আপনি মোট ইমেল খোলার হারের অংশ হিসাবে একটি ইমেল খুলেছেন কিনা তা আমরা কেবল দেখব।",
+          "opt_out_html": "আপনি এই তথ্য শেয়ার করতে না চাইলে, আপনি <a style=\"text-decoration:underline;\" href=\"%{link}\">সদস্যতা ত্যাগ করতে পারেন।<\/a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "স্টকে",
+          "out_of_stock": "স্টক শেষ"
+        }
+      },
+      "boolean": {
+        "true_label": "হ্যাঁ",
+        "false_label": "না"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "প্রাসঙ্গিকতা",
+        "price_ascending": "দাম, কম থেকে বেশি",
+        "price_descending": "দাম, উচ্চ থেকে কম"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "ত্রুটি - %{title}",
+      "products": "পণ্য",
+      "shopping_cart": "আপনার শপিং কার্ট",
+      "account": "হিসাব",
+      "create_account": "হিসাব তৈরি কর",
+      "reset_account": "অ্যাকাউন্ট রিসেট করুন",
+      "addresses": "ঠিকানা",
+      "order": "অর্ডার %{name}",
+      "search": "অনুসন্ধান করুন",
+      "search_results": {
+        "one": "অনুসন্ধান: \"%{terms}\" এর জন্য %{count} ফলাফল পাওয়া গেছে",
+        "other": "অনুসন্ধান: \"%{terms}\" এর জন্য %{count} ফলাফল পাওয়া গেছে"
+      },
+      "collections": "সংগ্রহ",
+      "not_found": "404 পাওয়া যায়নি",
+      "challenge": "চ্যালেঞ্জ",
+      "checkpoint": "চেকপয়েন্ট"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} ডিসকাউন্ট প্রয়োগ করা হয়েছে"
+    },
+    "challenge": {
+      "message": "চালিয়ে যেতে, আমাদের জানান আপনি রোবট নন।",
+      "error": "আপনার উত্তর সঠিক ছিল না, আবার চেষ্টা করুন.",
+      "submit_button_text": "জমা দিন"
+    },
+    "checkpoint": {
+      "message": "চালিয়ে যেতে ক্যাপচা সমাধান করুন",
+      "error": "ক্যাপচা যাচাইকরণ ব্যর্থ হয়েছে৷",
+      "submit_button_text": "জমা দিন"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "সাধারণত 1 ঘন্টার মধ্যে প্রস্তুত",
+        "two_hours": "সাধারণত 2 ঘন্টার মধ্যে প্রস্তুত",
+        "four_hours": "সাধারণত 4 ঘন্টার মধ্যে প্রস্তুত",
+        "twenty_four_hours": "সাধারণত 24 ঘন্টার মধ্যে প্রস্তুত",
+        "two_to_four_days": "সাধারণত 2-4 দিনের মধ্যে প্রস্তুত",
+        "five_or_more_days": "সাধারণত 5+ দিনের মধ্যে প্রস্তুত",
+        "zero_to_two_hours": "সাধারণত 2 ঘন্টার মধ্যে প্রস্তুত",
+        "two_to_four_hours": "সাধারণত 4 ঘন্টার মধ্যে প্রস্তুত",
+        "immediately": "এখন পিকআপের জন্য প্রস্তুত",
+        "next_day": "পরের দিন পিকআপের জন্য প্রস্তুত"
       }
     }
   },
@@ -1550,6 +1826,52 @@
         "search_location_title": "একটি অবস্থান নির্বাচন করুন",
         "selection_cancel_button": "বাতিল করুন",
         "selection_confirmation_button": "অবস্থান চয়ন করুন"
+      }
+    },
+    "enable_javascript": "আপনার অ্যাকাউন্ট দেখতে, আপনার ব্রাউজার সেটিংসে JavaScript সক্ষম করুন বা অন্য ব্রাউজার দিয়ে লগ ইন করুন৷",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "অ্যাকাউন্ট মেনু লুকান",
+        "label": "হিসাব",
+        "show_accessibility_label": "অ্যাকাউন্ট মেনু দেখান",
+        "nav_accessibility_label": "অ্যাকাউন্ট নেভিগেশন",
+        "open_menu_accessibility_label": "অ্যাকাউন্ট নেভিগেশন খুলুন",
+        "close_menu_accessibility_label": "অ্যাকাউন্ট নেভিগেশন বন্ধ করুন",
+        "loading_message": "অ্যাকাউন্ট নেভিগেশন লোড হচ্ছে"
+      },
+      "action_menu_accessibility_label": "আরও কাজ",
+      "close_menu_accessibility_label": "প্রধান নেভিগেশন বন্ধ করুন",
+      "contact_email_subject": "{{shopName}} অনলাইন স্টোর থেকে যোগাযোগ করুন",
+      "contact_link": "যোগাযোগ করুন",
+      "delete_confirmation": {
+        "cancel": "বাতিল করুন",
+        "delete": "মুছে ফেলা"
+      },
+      "dismiss_toast": "খারিজ",
+      "document_title": "{{sectionName}} - {{shopName}} - অ্যাকাউন্ট",
+      "go_to_store_link": "দোকানে যাও",
+      "loading_message": "লোড হচ্ছে",
+      "log_out_link": "প্রস্থান",
+      "logout_overlay_label": "আপনাকে লগ আউট করা হচ্ছে...",
+      "nav_label_accessibility_label": "প্রধান নেভিগেশান",
+      "navigation_accessibility_message": "আপনি {{sectionName}} এ নেভিগেট করেছেন",
+      "open_menu_accessibility_label": "প্রধান নেভিগেশন খুলুন",
+      "orders_link_label": "আদেশ",
+      "shop_logo_accessibility_label": "{{shopName}} লোগো",
+      "subscriptions_link_label": "সদস্যতা",
+      "settings_link": "সেটিংস"
+    },
+    "account_information": {
+      "loading_accessibility_message": "অ্যাকাউন্টের তথ্য লোড হচ্ছে",
+      "loading_finished_accessibility_message": "অ্যাকাউন্ট তথ্য লোড হয়েছে",
+      "profile_card": {
+        "cancel": "বাতিল করুন",
+        "cancel_accessibility_label": "প্রোফাইল সম্পাদনা বাতিল করুন",
+        "edit": "সম্পাদনা করুন",
+        "edit_accessibility_label": "জীবন বৃত্তান্ত সম্পাদনা",
+        "email_help_text": "লগইন করার জন্য ব্যবহৃত ইমেল পরিবর্তন করা যাবে না",
+        "first_name": "নামের প্রথম অংশ",
+        "last_name": "নামের শেষাংশ"
       }
     }
   }
