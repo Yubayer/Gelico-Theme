@@ -2303,7 +2303,138 @@
       "contact_information": "যোগাযোগের তথ্য",
       "company": "প্রতিষ্ঠান",
       "fully_refunded_label": "ফেরত দেওয়া হয়েছে",
-      "group_title_label": "এর অংশ: {{groupTitle}}"
+      "group_title_label": "এর অংশ: {{groupTitle}}",
+      "discount": "ছাড়",
+      "hide_items": "আইটেম লুকান",
+      "loading": "অর্ডার বিশদ লোড হচ্ছে",
+      "loading_finished_accessibility_message": "অর্ডার বিশদ লোড করা হয়েছে",
+      "location": "অবস্থান",
+      "image_gallery": {
+        "next": "পরবর্তী আইটেম দেখান",
+        "previous": "পূর্ববর্তী আইটেম দেখান"
+      },
+      "mobile_summary_toggle_button": {
+        "open": "অর্ডার সারাংশ দেখান",
+        "closed": "অর্ডার সারাংশ লুকান"
+      },
+      "no_data": "কোনোটিই নয়",
+      "no_data_provided_accessibility_label": "{{fieldName}} খালি",
+      "paid_amount": "পেড",
+      "partially_refunded_label": "আংশিকভাবে ফেরত দেওয়া হয়েছে",
+      "payment": {
+        "status_in_review": "রিভিউ পরে পেমেন্ট বকেয়া",
+        "status_unpaid": "পেমেন্ট বকেয়া {{date}}",
+        "title": "পেমেন্ট",
+        "card_payment_details": "{{lastDigits}} - {{formattedTransactionAmount}} দিয়ে শেষ",
+        "gift_card_payment_details": "{{lastDigits}} - {{formattedTransactionAmount}} দিয়ে শেষ",
+        "store_credit_payment_details": "স্টোর ক্রেডিট - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "শপ পে কিস্তি দিয়ে পরিশোধ করা হয়",
+          "view_schedule": "সময়সূচী দেখুন"
+        },
+        "manual_payment_methods": {
+          "money_order": "মানি অর্ডার - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "ক্যাশ অন ডেলিভারি (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "ব্যাঙ্ক ডিপোজিট - {{formattedTransactionAmount}}",
+          "manual": "ম্যানুয়াল - {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "সব দেখাও",
+          "show_less": "প্রদর্শন কম"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "শপ পে কিস্তি দিয়ে পরিশোধ করা হয়",
+        "description": "শপ অ্যাপে রিমাইন্ডার সহ আপনার পেমেন্টের সময়সূচীর উপরে থাকুন।",
+        "payment_reminders_button": "পেমেন্ট অনুস্মারক পান",
+        "desktop_qr_code_content": {
+          "title": "অনুস্মারক জন্য স্ক্যান করুন",
+          "description": "দোকানের সাথে আপনার কিস্তির অনুস্মারক পান।"
+        }
+      },
+      "refunded_amount": "ফেরত দেওয়া হয়েছে",
+      "request_return_failed": "আপনার অনুরোধ প্রক্রিয়াকরণে একটি সমস্যা ছিল। অনুগ্রহপূর্বক আবার চেষ্টা করুন.",
+      "remaining_amount": "অবশিষ্ট",
+      "marketing_section_title": "খবর এবং অফার",
+      "marketing_description": "আপনি মার্কেটিং ইমেল পাবেন. আপনি যে কোনো সময় ত্যাগ করতে পারেন।",
+      "marketing_checkbox_label": "খবর এবং অফার সহ আমাকে ইমেল করুন",
+      "marketing_checkmark_label": "আপনি ইমেল খবর এবং অফার পেতে সাবস্ক্রাইব করা হয়েছে",
+      "returns": {
+        "expand_events_label": "বিস্তারিত দেখাও",
+        "hide_events_label": "আড়াল বিস্তারিত",
+        "ineligible_return_message": "এই অর্ডারের কোনো আইটেম ফেরত পাওয়ার যোগ্য নয়।",
+        "ineligible_return_message_when_returned": "এই অর্ডারে কোনো অতিরিক্ত আইটেম ফেরত পাওয়ার যোগ্য নয়।",
+        "print_shipping_label": "শিপিং লেবেল প্রিন্ট করুন",
+        "return_and_refund_modal_header": "প্রত্যর্পণ নীতি",
+        "tracking_number": "ট্র্যাকিং নম্বর:"
+      },
+      "shipping": {
+        "address": "প্রেরণের ঠিকানা",
+        "address_map_marker": "প্রেরণের ঠিকানা",
+        "method": "পরিবহণ মাধ্যম",
+        "summary": "পাঠানো",
+        "free": "বিনামূল্যে",
+        "free_shipping_discount": "বিনামূল্যে পরিবহন",
+        "one_time": "এককালীন শিপিং",
+        "subscription": "সাবস্ক্রিপশন শিপিং"
+      },
+      "pickup": {
+        "pickup": "পিকআপ",
+        "pickup_location": "অবস্থান নিতে",
+        "pickup_point": "সংগ্রহের স্থান"
+      },
+      "show_items": "আইটেম দেখান",
+      "show_order_summary": "অর্ডার সারাংশ দেখান",
+      "hide_order_summary": "অর্ডার সারাংশ লুকান",
+      "subtitle": "নিশ্চিত করা হয়েছে {{date}}",
+      "subtotal": "সাবটোটাল",
+      "summary_list_title_accessibility_label": "অর্ডার আইটেম",
+      "summary_title": "অর্ডার সারাংশ",
+      "summary_totals_title_accessibility_label": "মোট অর্ডার",
+      "shop_order_tracking": {
+        "download_shop_to_track": "প্যাকেজ ট্র্যাক করতে দোকান ডাউনলোড করুন",
+        "track_order_with_shop": "দোকানের সাথে অর্ডার ট্র্যাক করুন",
+        "title_header": "আপনার ফোন দিয়ে স্ক্যান করুন",
+        "real_time_delivery_updates": "আপনার অর্ডার পাঠানো হলে দোকান আপনাকে রিয়েল-টাইম ডেলিভারি আপডেট পাঠাবে।"
+      },
+      "edit_summary": {
+        "added": "যোগ করা হয়েছে",
+        "added_with_quantity": "{{quantity}} যোগ করা হয়েছে",
+        "removed": "সরানো হয়েছে",
+        "removed_with_quantity": "{{quantity}} সরানো হয়েছে",
+        "updated_at": "আপনার অর্ডার {{date}} তারিখে আপডেট করা হয়েছে",
+        "returned": "ফিরে এসেছে",
+        "returned_with_quantities": "{ {{total}} এর মধ্যে {{delta}} ফেরত এসেছে৷",
+        "removed_with_quantities": "{ {{total}} এর মধ্যে {{delta}} সরানো হয়েছে",
+        "return_line_item_removed": "প্রত্যাবর্তন থেকে সরানো হয়েছে",
+        "return_line_item_removed_with_quantities": "রিটার্ন থেকে {{delta}} সরানো হয়েছে"
+      },
+      "shop_pay": {
+        "order_completed_with": "সঙ্গে অর্ডার সম্পন্ন",
+        "learn_more": "আরও জানুন"
+      },
+      "taxes": "করের",
+      "duties": "কর্তব্য",
+      "ok_duties_tooltip": "এই অর্ডারটি অন্য দেশ থেকে পাঠানো হচ্ছে, তাই আপনার মোট অর্ডারে শুল্ক যোগ করা হয়েছে।",
+      "error_duties_tooltip": "এই অর্ডার অন্য দেশ থেকে পাঠানো হচ্ছে, তাই শুল্ক এবং ট্যাক্স ডেলিভারি চার্জ করা হতে পারে.",
+      "zero_duties_tooltip": "এই অর্ডার অন্য দেশ থেকে পাঠানো হচ্ছে. এই মানের অর্ডারে শুল্ক নেওয়া হয় না।",
+      "tip": "টিপ",
+      "title": "অর্ডার {{name}}",
+      "total": "মোট",
+      "unit_price": "{{price}} \/ea",
+      "pagination": {
+        "load_more": "আর ঢুকাও",
+        "load_more_accessibility_label": "আরো আইটেম লোড",
+        "loading_accessibility_label": "আইটেম লোড হচ্ছে"
+      },
+      "login_to_view_all_order_details": "সমস্ত অর্ডার বিবরণ দেখতে লগ ইন করুন.",
+      "log_in": "প্রবেশ করুন",
+      "logged_in_account_no_permission_to_order": "আপনি {{email}} হিসাবে লগ ইন করেছেন। এই অ্যাকাউন্টের এই অর্ডার পরিচালনা করার অনুমতি নেই।",
+      "log_in_to_a_different_account": "একটি ভিন্ন অ্যাকাউন্টে লগ ইন করুন",
+      "fees": {
+        "restocking_fee": "রিস্টকিং ফি",
+        "return_shipping_fee": "শিপিং ফেরত"
+      }
     },
     "addresses": {
       "add_button": "ঠিকানা যোগ করুন",
