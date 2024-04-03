@@ -2036,7 +2036,13 @@
     },
     "settings": {
       "title": "সেটিংস",
-      "loading_accessibility_message": "সেটিংস পৃষ্ঠা লোড হচ্ছে"
+      "loading_accessibility_message": "সেটিংস পৃষ্ঠা লোড হচ্ছে",
+      "log_out_everywhere": {
+        "title": "সর্বত্র লগ আউট করুন",
+        "description": "আপনি যদি একটি ডিভাইস হারিয়ে থাকেন বা নিরাপত্তা উদ্বেগ থাকে, আপনার অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করতে সর্বত্র লগ আউট করুন।",
+        "button": "সর্বত্র লগ আউট করুন",
+        "warning_message": "আপনি এই ডিভাইসেও লগ আউট হবেন।"
+      }
     },
     "orders": {
       "order_list": {
@@ -2497,6 +2503,43 @@
       "next_slide": "ডানদিকে স্লাইড করুন",
       "previous_slide": "স্লাইড বাম",
       "name": "স্লাইডার"
+    },
+    "password_page": {
+      "login_form_heading": "পাসওয়ার্ড ব্যবহার করে দোকানে প্রবেশ করুন:",
+      "login_password_button": "পাসওয়ার্ড ব্যবহার করে লিখুন",
+      "login_form_password_label": "পাসওয়ার্ড",
+      "login_form_password_placeholder": "আপনার পাসওয়ার্ড",
+      "login_form_error": "ভুল গুপ্তশব্দ!",
+      "login_form_submit": "প্রবেশ করুন",
+      "admin_link_html": "আপনি কি দোকানের মালিক? <a href=\"\/admin\" class=\"link underlined-link\">এখানে লগইন করুন<\/a>",
+      "powered_by_shopify_html": "এই দোকানটি {{ shopify }} দ্বারা চালিত হবে"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "ফেসবুকে ভাগ কেরো",
+        "share_on_twitter": "X এ শেয়ার করুন",
+        "share_on_pinterest": "Pinterest এ পিন করুন"
+      },
+      "links": {
+        "twitter": "এক্স (টুইটার)",
+        "facebook": "ফেসবুক",
+        "instagram": "ইনস্টাগ্রাম",
+        "tumblr": "টাম্বলার",
+        "snapchat": "স্ন্যাপচ্যাট",
+        "vimeo": "ভিমিও",
+        "tiktok": "টিক টক"
+      }
+    },
+    "continue_shopping": "কেনাকাটা চালিয়ে যান",
+    "pagination": {
+      "label": "পৃষ্ঠা সংখ্যা",
+      "page": "পৃষ্ঠা {{ number }}",
+      "next": "পরবর্তী পৃষ্ঠা",
+      "previous": "আগের পৃষ্ঠা"
+    },
+    "search": {
+      "search": "অনুসন্ধান করুন",
+      "reset": "সাফ অনুসন্ধান শব্দ"
     }
   },
   "newsletter": {
@@ -2758,6 +2801,111 @@
       "email": "ইমেইল",
       "forgot_password": "আপনি কি পাসওয়ার্ড ভুলে গেছেন?",
       "guest_continue": "চালিয়ে যান"
+    }
+  },
+  "sections": {
+    "announcements": {
+      "previous_announcement": "আগের ঘোষণা",
+      "next_announcement": "পরবর্তী ঘোষণা",
+      "carousel": "ক্যারোসেল",
+      "announcement": "ঘোষণা",
+      "announcement_bar": "ঘোষণা বার"
+    },
+    "header": {
+      "announcement": "ঘোষণা",
+      "menu": "তালিকা",
+      "cart_count": {
+        "one": "{{ count }} আইটেম",
+        "other": "{{ count }} টি আইটেম৷"
+      }
+    },
+    "cart": {
+      "title": "আপনার কার্ট",
+      "caption": "কার্ট আইটেম",
+      "remove_title": "সরান {{ title }}",
+      "estimated_total": "সম্ভাব্য হিসাব",
+      "new_estimated_total": "নতুন আনুমানিক মোট",
+      "note": "বিশেষ নির্দেশাবলী অর্ডার করুন",
+      "checkout": "চেক আউট",
+      "empty": "তোমার থলে তো খালি",
+      "cart_error": "আপনার কার্ট আপডেট করার সময় একটি ত্রুটি হয়েছে৷ অনুগ্রহপূর্বক আবার চেষ্টা করুন.",
+      "cart_quantity_error_html": "আপনি আপনার কার্টে এই আইটেমটির শুধুমাত্র {{ quantity }} যোগ করতে পারেন৷",
+      "taxes_and_shipping_policy_at_checkout_html": "ট্যাক্স, ডিসকাউন্ট এবং <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">শিপিং<\/a> চেকআউট এ গণনা করা হয়",
+      "taxes_included_but_shipping_at_checkout": "ট্যাক্স অন্তর্ভুক্ত এবং শিপিং এবং ডিসকাউন্ট চেকআউট এ গণনা করা হয়",
+      "taxes_included_and_shipping_policy_html": "কর সংযুক্তি. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">শিপিং<\/a> এবং ডিসকাউন্ট চেকআউট এ গণনা.",
+      "taxes_and_shipping_at_checkout": "ট্যাক্স, ডিসকাউন্ট এবং শিপিং চেকআউট এ গণনা করা হয়",
+      "headings": {
+        "product": "পণ্য",
+        "price": "দাম",
+        "total": "মোট",
+        "quantity": "পরিমাণ",
+        "image": "পণ্যের ছবি"
+      },
+      "update": "হালনাগাদ",
+      "login": {
+        "title": "একাউন্ট আছে?",
+        "paragraph_html": "দ্রুত চেক আউট করতে <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\" class=\"link underlined-link\">লগ ইন করুন<\/a> ."
+      }
+    },
+    "footer": {
+      "payment": "মুল্য পরিশোধ পদ্ধতি"
+    },
+    "featured_blog": {
+      "view_all": "সব দেখ",
+      "onboarding_title": "ব্লগ পোস্ট",
+      "onboarding_content": "আপনার গ্রাহকদের আপনার ব্লগ পোস্টের একটি সারসংক্ষেপ দিন"
+    },
+    "featured_collection": {
+      "view_all": "সব দেখ",
+      "view_all_label": "{{ collection_name }} সংগ্রহে সমস্ত পণ্য দেখুন৷"
+    },
+    "collection_list": {
+      "view_all": "সব দেখ"
+    },
+    "collection_template": {
+      "empty": "কোন পণ্য পাওয়া যায়নি",
+      "title": "সংগ্রহ",
+      "use_fewer_filters_html": "কম ফিল্টার ব্যবহার করুন বা <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;\/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">সব মুছে ফেলুন<\/a>"
+    },
+    "video": {
+      "load_video": "ভিডিও লোড করুন: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "স্লাইড লোড করুন",
+      "previous_slideshow": "পূর্ববর্তী স্লাইড",
+      "next_slideshow": "পরবর্তী স্লাইড",
+      "pause_slideshow": "স্লাইডশো বিরতি",
+      "play_slideshow": "স্লাইডশো খেলুন",
+      "carousel": "ক্যারোসেল",
+      "slide": "স্লাইড"
+    },
+    "page": {
+      "title": "আমার স্নাতকের"
+    },
+    "quick_order_list": {
+      "product_total": "পণ্য সাবটোটাল",
+      "view_cart": "কার্ট দেখুন",
+      "each": "{{ money }} \/ea",
+      "product": "পণ্য",
+      "variant": "বৈকল্পিক",
+      "variant_total": "বৈকল্পিক মোট",
+      "items_added": {
+        "one": "{{ quantity }} আইটেম যোগ করা হয়েছে৷",
+        "other": "{{ quantity }} আইটেম যোগ করা হয়েছে৷"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} আইটেম সরানো হয়েছে৷",
+        "other": "{{ quantity }} আইটেম সরানো হয়েছে৷"
+      },
+      "product_variants": "পণ্য বৈকল্পিক",
+      "total_items": "মোট আইটেম",
+      "remove_all_single_item_confirmation": "আপনার কার্ট থেকে 1টি আইটেম সরাবেন?",
+      "remove_all_items_confirmation": "আপনার কার্ট থেকে সমস্ত {{ quantity }} আইটেম সরাতে চান?",
+      "remove_all": "সব মুছে ফেলুন",
+      "cancel": "বাতিল করুন",
+      "min_error": "এই আইটেমটির সর্বনিম্ন {{ min }} আছে",
+      "max_error": "এই আইটেমটিতে সর্বাধিক {{ max }} আছে",
+      "step_error": "আপনি এই আইটেমটি শুধুমাত্র {{ step }} এর বৃদ্ধিতে যোগ করতে পারেন"
     }
   }
 }
