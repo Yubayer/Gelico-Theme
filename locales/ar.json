@@ -1,0 +1,372 @@
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " و ",
+      "last_word_connector": "، و "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "هل أنت متأكد أنك تريد حذف العنوان {{address}} ؟"
+      },
+      "general": {
+        "page_title": "الدفع",
+        "error_page_title": "خطأ",
+        "skip_to_content": "تخطى الى المحتوى",
+        "breadcrumb": "مسار التنقل",
+        "continue_button_label": "يكمل",
+        "complete_purchase_button_label": "اكمل الطلب",
+        "pay_now_button_label": "ادفع الآن",
+        "authenticate_purchase_button_label": "مصادقة الدفع",
+        "edit_link_label": "يحرر",
+        "all_rights_reserved": "جميع الحقوق محفوظة %{shop_name}",
+        "print_policies_link_label": "مطبعة",
+        "cart": "عربة التسوق",
+        "close_modal_label": "يغلق",
+        "close_notice_label": "يغلق",
+        "expand_notice_label": "عرض المزيد",
+        "continue_to_shipping_method": "الاستمرار في الشحن",
+        "continue_to_payment_method": "الاستمرار في الدفع",
+        "continue_to_review": "مراجعة الطلب",
+        "back_to_cart": "العودة إلى السلة",
+        "back_to_contact_information": "العودة إلى المعلومات",
+        "back_to_shipping_method": "العودة إلى الشحن",
+        "back_to_payment_method": "العودة إلى الدفع",
+        "choose_shipping_method": "اختر طريقة الشحن",
+        "choose_payment_method": "اختر طريقة الدفع",
+        "choose_billing_address": "اختار عنوان للفواتير",
+        "contact_us_html": "اتصل بنا للحصول على مزيد من المعلومات",
+        "autocomplete_title": "اقتراحات",
+        "autocomplete_single_item": "1 عنصر متاح",
+        "autocomplete_multi_item": "{{number}} العناصر المتوفرة",
+        "autocomplete_close": "إغلاق الاقتراحات",
+        "forwarding_indicator": {
+          "new_window": "يفتح في نافذة جديدة.",
+          "external": "يفتح موقع خارجي.",
+          "external_and_new_window": "يفتح موقع خارجي في نافذة جديدة."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - الخروج"
+        },
+        "tooltip_accessibility_label": "معلومات اكثر",
+        "errors": {
+          "only_empty_terms_accepted": "تقبل هذه السياسة المصطلحات الفارغة فقط.",
+          "session_identifier_not_unique_error": "حدث خطأ ما في طلبك، يرجى محاولة التحقق مرة أخرى.",
+          "line_item_limit_reached": "تم الوصول إلى الحد الأقصى لعدد عناصر السطر.",
+          "session_is_already_finished": "لقد تم بالفعل الانتهاء من جلسة الخروج هذه.",
+          "merchandise": {
+            "only_value_constraint": "يُسمح فقط بالقيم الدقيقة في إدخال البضائع.",
+            "merchandise_not_found": "الصنف غير موجود.",
+            "merchandise_variant_not_found": "لم يتم العثور على متغير المنتج.",
+            "merchandise_not_applicable": "لا يمكن شراء متغير المنتج.",
+            "bundle_products_not_supported_for_b2b": "لا يمكن إضافة العناصر المجمعة إلى طلبات B2B لهذا الموقع.",
+            "gift_card_quantity_mismatch": "عند تحديد رموز بطاقة الهدايا، يجب أن تتطابق كمية العنصر وعدد رموز بطاقة الهدايا.",
+            "gift_card_not_supported": "بطاقات الهدايا غير مدعومة في عملية الدفع هذه.",
+            "gift_card_not_unique": "تظهر بطاقة الهدايا التي تحمل الرمز {{code}} أكثر من مرة في عملية الدفع هذه. يتم تنسيق الرموز قبل المقارنة.",
+            "gift_card_used": "تم تخصيص رمز بطاقة الهدايا {{code}} بالفعل لبطاقة الهدايا. يتم تنسيق الرموز قبل المقارنة.",
+            "gift_card_invalid": "رمز بطاقة الهدايا {{code}} غير صالح.",
+            "gift_card_code_changed": "تم تغيير رمز بطاقة الهدايا {{proposed_code}} إلى {{formatted_code}} ليتوافق مع قواعد التنسيق.",
+            "gift_card_with_attributes_not_supported": "بطاقات الهدايا ذات السمات المخصصة غير مدعومة في عملية الدفع هذه.",
+            "gift_card_with_components_not_supported": "بطاقات الهدايا التي تحتوي على مكونات غير مدعومة في عملية الدفع هذه.",
+            "selling_plan_mismatch": "تم تحديث الاشتراك.",
+            "selling_plan_not_supported": "الاشتراكات غير مدعومة.",
+            "selling_plan_not_supported_b2b": "الاشتراكات غير مدعومة للدفع B2B.",
+            "price_mismatch": "السعر المقترح سابقًا لهذه السلعة غير صالح وتم تحديثه.",
+            "inventory_not_found": "لم يتم العثور على مخزون لهذه البضائع.",
+            "product_not_published": "لم يتم نشر المنتج.",
+            "duplicated_stable_id": "يتمتع خط البضائع هذا بنفس المعرف الثابت الموجود في خط آخر.",
+            "minimum_quantity_not_met": "كمية بعض العناصر لا تلبي الحد الأدنى المطلوب.",
+            "maximum_quantity_exceeded": "كمية بعض العناصر تتجاوز الحد الأقصى المسموح به.",
+            "quantity_increment_not_met": "كمية بعض العناصر لا تلبي حدود الطلب.",
+            "quantity_rules_not_met": "كمية بعض العناصر لا تلبي حدود الطلب.",
+            "bundle_requires_components": "لا تحتوي منتجات هذه الحزمة على أي مكونات.",
+            "title_too_long": "عنوان السلعة طويل جدًا.",
+            "title_empty": "عنوان البضائع فارغ."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "جهة الاتصال بالشركة ليس لديها حق الوصول إلى الشركة.",
+            "customer_account_required": "يجب على العميل تسجيل الدخول للمتابعة.",
+            "contact_info_does_not_match_customer_account": "يجب أن تتطابق معلومات العميل المحددة مع حساب العميل الذي تم تسجيل الدخول إليه.",
+            "phone_number_does_not_match_expected_pattern": "رقم الهاتف المحدد لا يتطابق مع النمط المتوقع.",
+            "email_required": "مطلوب بريد إلكتروني عند شراء البضائع باستخدام الاشتراك.",
+            "email_domain_is_invalid": "لا يمكن حل هذا المجال المحدد.",
+            "missing_contact_method": "يفتقد طريقة اتصال صالحة.",
+            "checkout_completion_target_is_missing": "هدف إكمال الخروج مفقود.",
+            "invalid_customer_profile": "تم توفير ملف تعريف عميل غير صالح.",
+            "customer_profile_access_restricted": "ليس لدى Checkout إذن للوصول إلى ملف تعريف العميل.",
+            "checkout_completion_target_is_invalid_proc": "هدف إكمال عملية الدفع غير صالح."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "يجب أن تحتوي سلة التسوق على خط تسليم واحد فقط.",
+            "wrong_number_of_delivery_lines": "يجب تحديد خط تسليم لكل مجموعة من البضائع.",
+            "external_delivery_promise_error": "خطأ في إحضار وعد التسليم الخارجي.",
+            "options_instructions_invalid": "التعليمات المحددة لا تتطابق مع النمط المتوقع.",
+            "destination_address_required": "عنوان الوجهة مطلوب للمتابعة.",
+            "pickup_points_unavailable": "نقاط الالتقاط غير متاحة حاليًا.",
+            "local_pickup_delivery_line_detail_changed": "يجب تغيير استراتيجية التسليم المحلية الحالية من أجل الاستمرار.",
+            "local_pickup_no_delivery_strategy_available": "لم يتم العثور على استراتيجية تسليم محلية متاحة.",
+            "origin_location_id_required": "مطلوب معرف موقع الأصل عند طلب طريقة التسليم بالتجزئة.",
+            "invalid_origin_location_id": "تعذر العثور على موقع يطابق معرف الموقع الأصلي.",
+            "origin_location_id_not_allowed": "لا تدعم طرق التسليم المطلوبة معرف موقع الأصل.",
+            "auto_fulfill_not_allowed": "هذه الجلسة غير مصرح لها بتجاوز سلوك الإيفاء.",
+            "auto_fulfill_required": "يكون التنفيذ التلقائي مطلوبًا عند طلب طريقة التسليم بالتجزئة.",
+            "prefetch_shipping_rates_used": "يجب ألا تُرجع أسعار الشحن المُجلبة مسبقًا الأسعار أبدًا.",
+            "fulfillment_constraints_not_satisfied": "لم يتم استيفاء واحد أو أكثر من قيود التنفيذ.",
+            "must_fulfill_from_constraint_not_satisfied": "لم يتم استيفاء قيود الاستيفاء لأنه لا يمكن استيفاء العناصر من المواقع المطلوبة.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "لم يتم استيفاء قيود التنفيذ لأنه لا يمكن تنفيذ العناصر من نفس الموقع.",
+            "delivery_strategy_conditions_not_satisfied": "تتوفر استراتيجيات التسليم لهذا الموقع، ولكن شروطها غير مستوفاة.",
+            "out_of_stock_at_origin_location": "لا يوجد مخزون في الموقع الأصلي."
+          }
+        },
+        "back_button_label": "يعود",
+        "choose_delivery_strategy": "اختر طريقة التسليم",
+        "autocomplete_zero_item": "لا توجد عناصر متاحة",
+        "autocomplete_powered_by_google": "مدعوم من {{brandName}}",
+        "submit": "يُقدِّم",
+        "processing": "يعالج…",
+        "stepper": {
+          "increase": "زيادة {{type}}",
+          "decrease": "تقليل {{type}}",
+          "minimum_reached": "تم الوصول إلى الحد الأدنى من {{value}}",
+          "maximum_reached": "تم الوصول إلى الحد الأقصى لـ {{value}}"
+        },
+        "remove_item": "إزالة %{label}",
+        "remove_tag": "إزالة العلامة",
+        "dates": {
+          "weekdays": {
+            "monday": "الاثنين",
+            "tuesday": "يوم الثلاثاء",
+            "wednesday": "الأربعاء",
+            "thursday": "يوم الخميس",
+            "friday": "جمعة",
+            "saturday": "السبت",
+            "sunday": "الأحد"
+          },
+          "weekdays_abbreviation": {
+            "monday": "شهر",
+            "tuesday": "تو",
+            "wednesday": "نحن",
+            "thursday": "ذ",
+            "friday": "الأب",
+            "saturday": "سا",
+            "sunday": "سو"
+          },
+          "months": {
+            "january": "يناير",
+            "february": "شهر فبراير",
+            "march": "يمشي",
+            "april": "أبريل",
+            "may": "يمكن",
+            "june": "يونيو",
+            "july": "يوليو",
+            "august": "أغسطس",
+            "september": "سبتمبر",
+            "october": "اكتوبر",
+            "november": "شهر نوفمبر",
+            "december": "ديسمبر"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "عرض الشهر السابق، {{month}} {{year}}",
+          "show_next_month": "عرض الشهر القادم، {{month}} {{year}}",
+          "range_start": "بداية النطاق",
+          "in_range": "في النطاق",
+          "range_end": "نهاية المدى"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "مجموعة من علامة {{number}}",
+            "other": "مجموعة من علامات {{number}}"
+          }
+        }
+      },
+      "contact": {
+        "title": "معلومة",
+        "address_title": "عنوان",
+        "shipping_used_as_billing_notice": "سيتم استخدام هذا أيضًا كعنوان إرسال الفواتير لهذا الطلب.",
+        "delivery_option_title": "طريقة التوصيل",
+        "contact_method_title": "اتصال",
+        "email_label": "بريد إلكتروني",
+        "email_placeholder": "بريد إلكتروني",
+        "email_or_phone_label": "البريد الإلكتروني أو رقم الهاتف المحمول",
+        "email_or_phone_placeholder": "البريد الإلكتروني أو رقم الهاتف المحمول",
+        "stored_addresses_label": "العناوين المحفوظة",
+        "new_address_label": "استخدم عنوانًا جديدًا",
+        "first_name_label": "الاسم الأول",
+        "optional_first_name_label": "الإسم الأول (إختياري)",
+        "last_name_label": "اسم العائلة",
+        "company_label": "شركة",
+        "company_attention_label": "الشركة\/انتباه",
+        "optional_company_attention_label": "الشركة\/الانتباه (اختياري)",
+        "optional_company_label": "الشركة (اختياري)",
+        "address1_label": "عنوان",
+        "address2_label": "شقة، جناح، الخ.",
+        "optional_address2_label": "شقة، جناح، الخ (اختياري)",
+        "city_label": "مدينة",
+        "country_label": "البلد\/المنطقة",
+        "country_code": "رمز البلد\/المنطقة",
+        "province_label": "مقاطعة",
+        "province_placeholder": "مقاطعة",
+        "county_label": "مقاطعة",
+        "county_placeholder": "مقاطعة",
+        "state_label": "ولاية",
+        "state_placeholder": "ولاية",
+        "region_label": "منطقة",
+        "region_placeholder": "منطقة",
+        "region_none": "لم يتم تحديد أي شيء",
+        "prefecture_label": "المحافظة",
+        "prefecture_placeholder": "المحافظة",
+        "governorate_label": "محافظة",
+        "governorate_placeholder": "محافظة",
+        "emirate_label": "الإمارة",
+        "emirate_placeholder": "الإمارة",
+        "state_and_territory_label": "الولاية\/الإقليم",
+        "state_and_territory_placeholder": "الولاية\/الإقليم",
+        "phone_label": "هاتف",
+        "optional_phone_label": "الهاتف اختياري)",
+        "phone_placeholder": "هاتف",
+        "phone_tooltip": "في حال احتجنا إلى الاتصال بك بخصوص طلبك",
+        "zip_code_label": "الرمز البريدي",
+        "zip_code_placeholder": "الرمز البريدي",
+        "postal_code_label": "رمز بريدي",
+        "postal_code_placeholder": "رمز بريدي",
+        "postcode_label": "شفرة البريد",
+        "postcode_placeholder": "شفرة البريد",
+        "pincode_label": "رمز التعريف الشخصي",
+        "pincode_placeholder": "رمز التعريف الشخصي",
+        "civic_number_warning": "أضف رقم المنزل إذا كان لديك واحد",
+        "optional_last_name_label": "الاسم الأخير (اختياري)"
+      },
+      "order_summary": {
+        "due_on_fulfillment": "مستحق عند الوفاء",
+        "subscriptions": "الاشتراكات",
+        "duties_label": "الواجبات",
+        "duties_and_taxes_label": "الرسوم والضرائب",
+        "error_duties_tooltip": "يتم شحن هذا الطلب من دولة أخرى، لذلك قد يتم فرض رسوم وضرائب عند التسليم.",
+        "may_be_charged_on_delivery": "قد يتم تحصيلها عند التسليم",
+        "total_updated_label_with_price": "السعر الإجمالي المحدث: %{totalPrice}",
+        "updated_shipping_method": "طريقة الشحن المحدثة: %{shipping_method}",
+        "recurring_payments": "دفعات متكررة",
+        "recurring_total_multiple_label": "يحتوي هذا الطلب على رسوم متكررة لعناصر متعددة.",
+        "deferred_total_due_date_label": "إجمالي المستحق {{date}}",
+        "full_price": "السعر الكامل: %{price}",
+        "custom_discount": "خصم مخصص",
+        "expand_component_information": {
+          "one": "عرض %{count} عنصر",
+          "other": "عرض %{count} من العناصر"
+        },
+        "collapse_component_information": {
+          "one": "إخفاء %{count} عنصر",
+          "other": "إخفاء %{count} من العناصر"
+        },
+        "component_quantity_title": "%{الكمية} × %{product_title}",
+        "discount_discovery": {
+          "add_code": "إضافة خصم",
+          "merchandise_quantity_label": {
+            "one": "%{count} عنصر",
+            "other": "%{count} من العناصر"
+          }
+        },
+        "alternative_payment_currency_total": "تم تحصيلها كـ %{amount_due}"
+      },
+      "shipping": {
+        "title": "توصيل",
+        "delivery_title": "توصيل",
+        "shipping_method_title": "طريقة الشحن",
+        "shipping_method_one_time_purchase_group_title": "شراء لمرة واحدة",
+        "shipping_method_first_shipment_group_title": {
+          "one": "أول شحنة",
+          "other": "الشحنات الأولى"
+        },
+        "shipping_method_subscription_group_title": "الاشتراك",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "شحنة متكررة",
+          "other": "الشحنات المتكررة"
+        },
+        "subscription_shipping": "شحن الإشتراك",
+        "subscription_local_delivery": "الاشتراك التسليم المحلي",
+        "subscription_pickup": "تحصيل الاشتراك",
+        "waiting_on_rate_notice": "جارٍ الحصول على أسعار الشحن المتوفرة…",
+        "waiting_on_pickup_location_notice": "جارٍ الحصول على مواقع الالتقاط المتاحة...",
+        "no_rates_for_cart_or_destination_notice": "لا توجد طرق شحن متاحة لسلة التسوق الخاصة بك أو عنوانك",
+        "no_pickup_location_notice": "واحد على الأقل من منتجاتك غير متاح للاستلام",
+        "no_rates_for_country_notice": "لم يتم العثور على أسعار الشحن لهذا العنوان.",
+        "no_rates_contact_notice": "اتصل بنا للحصول على مزيد من المعلومات",
+        "free_rate_label": "حر",
+        "cheapest_rate_label": "أرخص",
+        "please_enter_your_shipping_information_notice": "الرجاء إدخال معلومات الشحن الخاصة بك.",
+        "estimated_delivery_date": {
+          "one": "%{count} يوم عمل",
+          "other": "%{count} يوم عمل"
+        },
+        "estimated_delivery_date_range": "%{minimum} إلى %{maximum} يوم عمل",
+        "estimated_delivery_time": "يقدر وقت التسليم}",
+        "estimated_delivery_time_range": "التسليم المقدر %{min_time}–%{max_time}",
+        "delivery_today": "التسليم في نفس اليوم %{time}",
+        "delivery_tomorrow": "التسليم في اليوم التالي %{time}",
+        "two_day_delivery": "التسليم خلال يومين %{time}",
+        "delivery": "موعد التسليم}",
+        "arrives_time": "الوصول %{time}",
+        "arrives_time_range": "الوصول %{min_time}–%{max_time}",
+        "estimated_time": "يقدر %{الوقت}",
+        "estimated_time_range": "يقدر %{min_time}–%{max_time}",
+        "shipping_line_phone_label": "رقم الهاتف المحمول (مطلوب)",
+        "shipping_line_phone": "قد يستخدم ساعي البريد الخاص بك هذا الرقم للاتصال بك.",
+        "shipping_line_delivery_phone_label": "رقم الهاتف الجوال",
+        "shipping_line_delivery_phone": "قد يتم الاتصال بك للحصول على تحديثات بشأن التسليم الخاص بك.",
+        "split_cart_merchandise_quantity_label_standard": "%{quantity} من العناصر",
+        "split_cart_merchandise_quantity_label_additional": "+%{quantity} أكثر",
+        "split_cart_merchandise_shipment_number": "الشحنة %{number} من %{total}",
+        "split_cart_ships_now": "السفن الآن",
+        "split_cart_ships_later": "السفن في وقت لاحق",
+        "split_cart_ships_date": "يتم الشحن %{date}",
+        "split_cart_shipped_by_amazon_prime": "يتم الشحن عن طريق أمازون برايم",
+        "split_cart_shipped_by_shop": "تم الشحن بواسطة %{shop_name}",
+        "split_cart_multiple_shipment_label": "شحنات متعددة",
+        "split_cart_shipping_label": "طريقة",
+        "split_cart_multiple_shipment_quantity_label": "%{quantity} شحنات",
+        "split_cart_multiple_shipment_notice": "سوف يصل طلبك في شحنات متعددة",
+        "merchandise_quantity_label_inline_primary": "الكمية: %{quantity}",
+        "optional_shipping_line_delivery_instructions_label": "تعليمات التسليم (اختياري)",
+        "shipping_line_delivery_instructions": "أدخل المعلومات الضرورية مثل رموز الباب أو تعليمات التسليم.",
+        "other_method": {
+          "zero": "لا توجد طرق أخرى متاحة",
+          "one": "%{count} طريقة أخرى متاحة على",
+          "other": "%{count} طرق أخرى متاحة بدءًا من"
+        },
+        "shipping_rate_discounted_amount": "كان: %{original_amount}. الآن: %{المبلغ}",
+        "local_delivery": "توصيل محلي",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "لتسليم %{count}.",
+            "other": "بالنسبة لـ %{count} من عمليات التسليم"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "كل يوم",
+              "other": "كل %{count} يوم"
+            },
+            "week": {
+              "one": "كل اسبوع",
+              "other": "كل %{count} أسابيع"
+            },
+            "month": {
+              "one": "كل شهر",
+              "other": "كل %{count} شهر"
+            },
+            "year": {
+              "one": "كل عام",
+              "other": "كل %{count} سنة"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} لكل عملية تسليم",
+          "prepaid_shipping_price_label": "%{shipping_price} لكل توصيل × %{delivery_interval_count}",
+          "initial_order_discounted": "تكلفة الشحن الأولى %{discounted_shipping_cost}، ثم %{frequency_description}",
+          "prepaid_initial_order_discounted": "تكلفة الشحن الأولى %{discounted_shipping_price} %{prepay_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "تكلفة الشحن الأولى %{discounted_shipping_price} %{prepay_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "تكلفة الشحن الأولى %{discounted_shipping_price} %{prepay_delivery_frequency}، ثم %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "تكلفة الشحن الأولى %{discounted_shipping_price} %{prepay_delivery_frequency} (%{discounted_cost_per_delivery})، ثم %{shipping_price} %{billing_cycle}"
+        }
+      }
+    }
+  }
+}
