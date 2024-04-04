@@ -16,8 +16,8 @@
             "text_align": "center",
             "richtext": "<p>FREE SHIPPING OVER $100. <a href='\/collections\/all'>SHOP NOW<\/a><\/p>",
             "countdown_end_time": "May 28, 2024 00:00:00",
-            "text_color": "#fff",
-            "link_text_color": "#fff"
+            "text_color": "#ffffff",
+            "link_text_color": "#ffffff"
           }
         }
       },
@@ -27,7 +27,7 @@
       "settings": {
         "full_width": true,
         "style": "style-1",
-        "background_color": "#000"
+        "background_color": "#000000"
       }
     },
     "galiko_header_r8QUGJ": {
@@ -35,7 +35,7 @@
       "settings": {
         "header_style": "style-1",
         "main_menu": "main-menu",
-        "enable_megamenu": "",
+        "enable_megamenu": "spring shop",
         "shop_name": "GALIKO",
         "logo_width_desktop": 100,
         "logo_width_mobile": 100,
