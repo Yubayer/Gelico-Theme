@@ -33,12 +33,14 @@
     "galiko_header_r8QUGJ": {
       "type": "galiko-header",
       "settings": {
-        "header_style": "style-1",
+        "header_style": "style-3",
         "main_menu": "main-menu",
         "enable_megamenu": "spring shop",
         "shop_name": "GALIKO",
         "logo_width_desktop": 100,
         "logo_width_mobile": 100,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
         "search_icon": "",
         "usre_icon": "",
         "cart_icon": ""
