@@ -39,6 +39,8 @@
         "shop_name": "GALIKO",
         "logo_width_desktop": 100,
         "logo_width_mobile": 100,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
         "search_icon": "",
         "usre_icon": "",
         "cart_icon": ""
