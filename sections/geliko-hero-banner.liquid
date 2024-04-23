@@ -40,17 +40,6 @@
       "default": true
     },
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Select Image"
-    },
-    {
-      "type": "textarea",
-      "id": "heading",
-      "label": "heading",
-      "default": "Discover the Secret to Perfect Skin"
-    },
-    {
       "type": "header",
       "content": "Section Spacing Desktop"
     },
@@ -141,13 +130,74 @@
   ],
   "blocks": [
     {
-      "type": "text",
-      "name": "text",
+      "type": "slide",
+      "name": "Slide Item",
       "settings": [
         {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "Select Image for Desktop",
+          "info": "Desktop Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_tab",
+          "label": "Select Image for Tablet",
+          "info": "Table Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Select Image for Mobile",
+          "info": "Mobile Image"
+        },
+        {
           "type": "text",
-          "id": "text",
-          "label": "text"
+          "id": "tag",
+          "label": "Tag",
+          "default": "New Collection"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Invites customers to explore your unique style offerings"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sub Title",
+          "default": "Invites customers to explore your unique style offerings"
+        },
+        {
+          "type": "header",
+          "content": "First Button"
+        },
+        {
+          "type": "text",
+          "id": "button_1_lable",
+          "label": "Button Label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "button_1_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "header",
+          "content": "Second Button"
+        },
+        {
+          "type": "text",
+          "id": "button_2_lable",
+          "label": "Button Label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "button_2_url",
+          "label": "Button URL"
         }
       ]
     }
