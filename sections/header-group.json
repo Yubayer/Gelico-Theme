@@ -32,6 +32,20 @@
     },
     "galiko_header_r8QUGJ": {
       "type": "galiko-header",
+      "blocks": {
+        "megamenu_image_R4649X": {
+          "type": "megamenu-image",
+          "settings": {
+            "menu_title": "Spring Shop",
+            "image1": "shopify:\/\/shop_images\/image_2.png",
+            "url1": "",
+            "url2": ""
+          }
+        }
+      },
+      "block_order": [
+        "megamenu_image_R4649X"
+      ],
       "settings": {
         "header_style": "style-1",
         "main_menu": "main-menu",
