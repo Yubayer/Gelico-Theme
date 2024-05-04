@@ -50,7 +50,7 @@
 {% liquid
   assign enable_megamenu = section.settings.enable_megamenu | strip | strip_html | downcase | remove: ' ' | split: ','
   assign menuLength = section.settings.main_menu.links.size
-  assign offset_large_device = 8
+  assign offset_large_device = 5
   # assign offset_medium_device = 5
 %}
 
