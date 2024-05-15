@@ -21,10 +21,18 @@
 
   if imageSize > 0
     if imageSize == 1
-      assign grid_columns = 'minmax(0px, 5fr) minmax(0px, 2fr)'
+      if section.settings.megamenu_image_position == 'left'
+        assign grid_columns = 'minmax(0px, 2fr) minmax(0px, 5fr)'
+      else
+        assign grid_columns = 'minmax(0px, 5fr) minmax(0px, 2fr)'
+      endif
       assign image_grid_colunmns = 'minmax(0px, 1fr)'
     elsif imageSize == 2
-      assign grid_columns = 'minmax(0px, 4fr) minmax(0px, 3fr)'
+      if section.settings.megamenu_image_position == 'left'
+        assign grid_columns = 'minmax(0px, 3fr) minmax(0px, 4fr)'
+      else
+        assign grid_columns = 'minmax(0px, 4fr) minmax(0px, 3fr)'
+      endif
       assign image_grid_colunmns = 'minmax(0px, 1fr) minmax(0px, 1fr)'
     endif
   else
