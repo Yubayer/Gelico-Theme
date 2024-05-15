@@ -39,7 +39,6 @@
             "menu_title": "Spring Shop",
             "image1": "shopify:\/\/shop_images\/image_2.png",
             "url1": "",
-            "image2": "shopify:\/\/shop_images\/image_1.png",
             "url2": ""
           }
         }
@@ -51,7 +50,7 @@
         "header_style": "style-2",
         "main_menu": "main-menu",
         "enable_megamenu": "spring shop",
-        "megamenu_image_position": "left",
+        "megamenu_image_position": "right",
         "shop_name": "GALIKO",
         "logo_width_desktop": 100,
         "logo_width_mobile": 100,
