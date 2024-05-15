@@ -51,6 +51,7 @@
         "header_style": "style-2",
         "main_menu": "main-menu",
         "enable_megamenu": "spring shop",
+        "megamenu_image_position": "left",
         "shop_name": "GALIKO",
         "logo_width_desktop": 100,
         "logo_width_mobile": 100,
