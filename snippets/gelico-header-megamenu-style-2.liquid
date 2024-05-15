@@ -43,49 +43,97 @@
 <div class="hs2-megamenu-container">
   <div class="page-width">
     <div class="hs2-megamenu-wrapper" style="grid-template-columns: {{ grid_columns }};">
-      <div class="hs2-mega-list-wrapper">
-        <ul class="hs2-megamenu-second-layer-ul">
-          {% for childLink in link.links %}
-            <li class="hs2-megamenu-second-layer-li">
-              <a href="{{ childLink.url }}" class="hs2-megamenu-second-layer-a">{{ childLink.title | upcase }}</a>
-              {% unless childLink.links == blank %}
-                <ul class="hs2-megamenu-third-layer-ul">
-                  {% for grandchildLink in childLink.links %}
-                    <li class="hs2-megamenu-third-layer-li">
-                      <a href="{{ grandchildLink.url }}" class="hs2-megamenu-third-layer-a">
-                        {{- grandchildLink.title | downcase -}}
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endunless %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% if imageSize > 0 %}
-        <div class="hs2-mega-image-wrapper" style="grid-template-columns: {{ image_grid_colunmns }}">
-          {% for block in imageBlocks %}
-            {% if menu_title == link_title %}
-              {% for i in (1..2) %}
-                {% liquid
-                  assign imageId = 'image' | append: i
-                  assign imageUrl = 'url' | append: i
-                  assign megamenu_image = block.settings[imageId]
-                  assign megamenu_image_url = block.settings[imageUrl]
-                %}
-                {% unless megamenu_image == blank %}
-                  <a href="{{ megamenu_image_url }}" class="hs2-mega-image-block">
-                    {{
-                      megamenu_image
-                      | image_url: width: 400, height: 440, crop: 'center', quality: 80, format: 'jpg'
-                      | image_tag: loading: 'lazy', class: 'hs2-mega-image'
-                    }}
-                  </a>
+      {% if section.settings.megamenu_image_position == 'right' %}
+        <div class="hs2-mega-list-wrapper">
+          <ul class="hs2-megamenu-second-layer-ul">
+            {% for childLink in link.links %}
+              <li class="hs2-megamenu-second-layer-li">
+                <a href="{{ childLink.url }}" class="hs2-megamenu-second-layer-a">{{ childLink.title | upcase }}</a>
+                {% unless childLink.links == blank %}
+                  <ul class="hs2-megamenu-third-layer-ul">
+                    {% for grandchildLink in childLink.links %}
+                      <li class="hs2-megamenu-third-layer-li">
+                        <a href="{{ grandchildLink.url }}" class="hs2-megamenu-third-layer-a">
+                          {{- grandchildLink.title | downcase -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
                 {% endunless %}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% if imageSize > 0 %}
+          <div class="hs2-mega-image-wrapper" style="grid-template-columns: {{ image_grid_colunmns }}">
+            {% for block in imageBlocks %}
+              {% if menu_title == link_title %}
+                {% for i in (1..2) %}
+                  {% liquid
+                    assign imageId = 'image' | append: i
+                    assign imageUrl = 'url' | append: i
+                    assign megamenu_image = block.settings[imageId]
+                    assign megamenu_image_url = block.settings[imageUrl]
+                  %}
+                  {% unless megamenu_image == blank %}
+                    <a href="{{ megamenu_image_url }}" class="hs2-mega-image-block">
+                      {{
+                        megamenu_image
+                        | image_url: width: 400, height: 440, crop: 'center', quality: 80, format: 'jpg'
+                        | image_tag: loading: 'lazy', class: 'hs2-mega-image'
+                      }}
+                    </a>
+                  {% endunless %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% else %}
+        {% if imageSize > 0 %}
+          <div class="hs2-mega-image-wrapper" style="grid-template-columns: {{ image_grid_colunmns }}">
+            {% for block in imageBlocks %}
+              {% if menu_title == link_title %}
+                {% for i in (1..2) %}
+                  {% liquid
+                    assign imageId = 'image' | append: i
+                    assign imageUrl = 'url' | append: i
+                    assign megamenu_image = block.settings[imageId]
+                    assign megamenu_image_url = block.settings[imageUrl]
+                  %}
+                  {% unless megamenu_image == blank %}
+                    <a href="{{ megamenu_image_url }}" class="hs2-mega-image-block">
+                      {{
+                        megamenu_image
+                        | image_url: width: 400, height: 440, crop: 'center', quality: 80, format: 'jpg'
+                        | image_tag: loading: 'lazy', class: 'hs2-mega-image'
+                      }}
+                    </a>
+                  {% endunless %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+        <div class="hs2-mega-list-wrapper">
+          <ul class="hs2-megamenu-second-layer-ul">
+            {% for childLink in link.links %}
+              <li class="hs2-megamenu-second-layer-li">
+                <a href="{{ childLink.url }}" class="hs2-megamenu-second-layer-a">{{ childLink.title | upcase }}</a>
+                {% unless childLink.links == blank %}
+                  <ul class="hs2-megamenu-third-layer-ul">
+                    {% for grandchildLink in childLink.links %}
+                      <li class="hs2-megamenu-third-layer-li">
+                        <a href="{{ grandchildLink.url }}" class="hs2-megamenu-third-layer-a">
+                          {{- grandchildLink.title | downcase -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endunless %}
+              </li>
+            {% endfor %}
+          </ul>
         </div>
       {% endif %}
     </div>
